@@ -1,0 +1,5 @@
+
+#this will apply layout to the Success view
+2colsleftSuccess:
+  layout: 2-cols-left
+

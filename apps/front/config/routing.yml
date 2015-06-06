@@ -2,9 +2,91 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 # default rules
+#homepage:
+#  url:   /
+#  param: { module: default, action: index }
+
+
 homepage:
-  url:   /
-  param: { module: default, action: index }
+  url: /
+  param: { module: main, action:index }
+links:
+  url: /links
+  param: { module: main, action: links }
+pics:
+  url: /pics
+  param: { module: main, action:pics }
+
+arunnersplace:
+  url: /arunnersplace
+  param: { module: main, action: arunnersplace }
+running:
+  url: /running
+  param: { module: main, action: running }
+music:
+  url: /musicvideos
+  param: { module: main, action: videos }
+
+wikipedia:
+  url: /wikipedia
+  param: { module: main, action: wikipedia }
+
+cactus:
+  url: /cactus
+  param: { module: main, action: cactus } 
+homepage2:
+  url: /index
+  param: { module: main, action:index }
+
+logout:
+  url: /logout
+  param: { module:main, action:logout }
+fb:
+  url: /fb
+  param: { module: main, action:fb }
+fbredirect:
+  url: /fbredirect
+  param: { module: main, action:fbredirect } 
+
+mruns:
+  url: /mruns
+  param: { module: main, action:mruns }
+captcha:
+  url: /captcha
+  param: { module: main, action:captcha }
+2colleft:
+  url: /2-col-left
+  param: { module: main, action:2colsleft }
+phpbooks:
+  url: /phpbooks
+  param: { module: main, action:phpbooks }
+tutorials:
+  url: /tutorials
+  param: { module: main, action:tutorials }
+projects:
+  url: /projects
+  param: { module: main, action:projects }
+tutorial1:
+  url: /tutorials/xmlparsing
+  param: { module: main, action:tutorial1 }
+tutorial2parse:
+  url: /tutorials/xmlparsing/parse
+  param: { module: main, action:parse }
+about:
+  url: /about
+  param: { module: main, action:about }
+
+races:
+  url: /races
+  param: { module: main, action:races }
+
+#contact:
+ # url: /contact
+ # param: { module: main, action:contact }
+
+scooby:
+  url: /scooby
+  param: { module: main, action:scooby }
 
 # generic rules
 # please, remove them by adding more specific rules
