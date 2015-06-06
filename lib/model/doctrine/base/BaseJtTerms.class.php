@@ -21,7 +21,7 @@ Doctrine_Manager::getInstance()->bindComponent('JtTerms', 'doctrine');
  * @method JtTerms setSlug()       Sets the current record's "slug" value
  * @method JtTerms setTermGroup()  Sets the current record's "term_group" value
  * 
- * @package    homewww
+ * @package    jtweb
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

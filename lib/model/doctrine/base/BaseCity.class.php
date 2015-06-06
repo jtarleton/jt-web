@@ -27,7 +27,7 @@ Doctrine_Manager::getInstance()->bindComponent('City', 'doctrine');
  * @method City    setPopulation()  Sets the current record's "population" value
  * @method City    setCountry()     Sets the current record's "Country" value
  * 
- * @package    homewww
+ * @package    jtweb
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

@@ -27,7 +27,7 @@ Doctrine_Manager::getInstance()->bindComponent('ChipotleOrders', 'doctrine');
  * @method ChipotleOrders setChoiceDescription()  Sets the current record's "choice_description" value
  * @method ChipotleOrders setItemPrice()          Sets the current record's "item_price" value
  * 
- * @package    homewww
+ * @package    jtweb
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

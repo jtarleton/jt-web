@@ -78,7 +78,7 @@ Doctrine_Manager::getInstance()->bindComponent('JtPosts', 'doctrine');
  * @method JtPosts   setPostMimeType()          Sets the current record's "post_mime_type" value
  * @method JtPosts   setCommentCount()          Sets the current record's "comment_count" value
  * 
- * @package    homewww
+ * @package    jtweb
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

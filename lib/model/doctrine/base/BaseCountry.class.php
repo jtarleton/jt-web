@@ -60,7 +60,7 @@ Doctrine_Manager::getInstance()->bindComponent('Country', 'doctrine');
  * @method Country             setCity()            Sets the current record's "City" collection
  * @method Country             setCountryLanguage() Sets the current record's "CountryLanguage" collection
  * 
- * @package    homewww
+ * @package    jtweb
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

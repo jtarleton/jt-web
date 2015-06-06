@@ -1,0 +1,779 @@
+Jun 06 14:33:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Jun 06 14:33:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 14:33:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 14:33:01 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Jun 06 14:33:01 symfony [info] {sfPHPView} Render "/var/homewww/lib/controller/default/templates/indexSuccess.php"
+Jun 06 14:33:01 symfony [info] {sfPHPView} Decorate content with "/var/homewww/lib/controller/default/templates/defaultLayout.php"
+Jun 06 14:33:01 symfony [info] {sfPHPView} Render "/var/homewww/lib/controller/default/templates/defaultLayout.php"
+Jun 06 14:33:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 14:33:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 14:33:01 symfony [info] {sfWebDebugLogger} Configuration 446.58 ms (9)
+Jun 06 14:33:01 symfony [info] {sfWebDebugLogger} Factories 120.51 ms (1)
+Jun 06 14:33:01 symfony [info] {sfWebDebugLogger} Action "default/index" 0.20 ms (1)
+Jun 06 14:33:01 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 24.79 ms (1)
+Jun 06 14:33:01 symfony [info] {sfWebResponse} Send content (28930 o)
+Jun 06 10:51:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 10:51:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 10:51:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 10:51:59 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:00:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/cron.php" (/).
+Jun 06 11:00:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:00:07 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:00:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:00:07 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (5)
+Jun 06 11:00:07 symfony [info] {sfWebDebugLogger} Factories 67.87 ms (1)
+Jun 06 11:02:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:02:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:02:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:02:32 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:02:35 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Jun 06 11:02:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 11:02:35 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:02:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:02:35 symfony [info] {sfWebDebugLogger} Configuration 1964.14 ms (10)
+Jun 06 11:02:35 symfony [info] {sfWebDebugLogger} Factories 218.40 ms (1)
+Jun 06 11:02:35 symfony [info] {sfWebDebugLogger} Action "main/index" 2374.37 ms (1)
+Jun 06 11:03:04 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:03:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:03:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:03:04 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:03:04 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Jun 06 11:03:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 11:03:04 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:03:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:03:04 symfony [info] {sfWebDebugLogger} Configuration 367.69 ms (8)
+Jun 06 11:03:04 symfony [info] {sfWebDebugLogger} Factories 110.28 ms (1)
+Jun 06 11:03:04 symfony [info] {sfWebDebugLogger} Action "main/index" 131.73 ms (1)
+Jun 06 11:03:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:03:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:03:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:03:49 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:03:49 symfony [err] {Doctrine_Connection_Exception} There is no open connection
+Jun 06 11:03:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 11:03:49 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:03:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:03:49 symfony [info] {sfWebDebugLogger} Configuration 380.75 ms (7)
+Jun 06 11:03:49 symfony [info] {sfWebDebugLogger} Factories 95.25 ms (1)
+Jun 06 11:03:49 symfony [info] {sfWebDebugLogger} Action "main/index" 45.33 ms (1)
+Jun 06 11:05:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:05:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:05:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:05:01 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:05:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:05:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:05:01 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:05:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:05:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:05:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:05:26 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:05:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:05:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:05:26 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:07:54 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:07:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:07:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:07:54 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:07:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:07:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:07:54 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:07:54 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:07:54 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:07:54 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:07:54 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/templates/layout.php on line 70 (Undefined index: fbsess)
+Jun 06 11:07:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /css/bootflat/css/bootflat.css with parameters array (  'module' => 'css',  'action' => 'bootflat',  'css' => 'bootflat.css',)
+Jun 06 11:07:55 symfony [info] {sfFrontWebController} Action "css/bootflat" does not exist
+Jun 06 11:07:55 symfony [err] {sfError404Exception} Action "css/bootflat" does not exist.
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:07:55 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Configuration 0.71 ms (5)
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Factories 174.62 ms (1)
+Jun 06 11:07:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.nivo.slider.js" (/).
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:07:55 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Configuration 0.72 ms (5)
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Factories 211.07 ms (1)
+Jun 06 11:07:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery-1.7.1.min.js" (/).
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:07:55 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Factories 279.56 ms (1)
+Jun 06 11:07:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/inland-wood.css" (/).
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:07:55 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Configuration 0.67 ms (5)
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Factories 347.57 ms (1)
+Jun 06 11:07:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /css/bootflat/css/bootflat.css with parameters array (  'module' => 'css',  'action' => 'bootflat',  'css' => 'bootflat.css',)
+Jun 06 11:07:55 symfony [info] {sfFrontWebController} Action "css/bootflat" does not exist
+Jun 06 11:07:55 symfony [err] {sfError404Exception} Action "css/bootflat" does not exist.
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:07:55 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (5)
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Factories 71.69 ms (1)
+Jun 06 11:07:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.nivo.slider.js" (/).
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:07:55 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:07:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (5)
+Jun 06 11:07:55 symfony [info] {sfWebDebugLogger} Factories 142.17 ms (1)
+Jun 06 11:08:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:08:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:08:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:08:51 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:08:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:08:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:08:51 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:08:51 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:08:51 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:08:51 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:08:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:08:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (9)
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Factories 40.98 ms (1)
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Action "main/index" 39.16 ms (1)
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.45 ms (2)
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 11.86 ms (1)
+Jun 06 11:08:51 symfony [info] {sfWebResponse} Send content (34794 o)
+Jun 06 11:08:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /css/bootflat/css/bootflat.css with parameters array (  'module' => 'css',  'action' => 'bootflat',  'css' => 'bootflat.css',)
+Jun 06 11:08:51 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery-1.7.1.min.js" (/).
+Jun 06 11:08:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:08:51 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:08:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Configuration 8.71 ms (5)
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Factories 152.41 ms (1)
+Jun 06 11:08:51 symfony [info] {sfFrontWebController} Action "css/bootflat" does not exist
+Jun 06 11:08:51 symfony [err] {sfError404Exception} Action "css/bootflat" does not exist.
+Jun 06 11:08:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:08:51 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:08:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Configuration 0.64 ms (5)
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Factories 180.60 ms (1)
+Jun 06 11:08:51 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/inland-wood.css" (/).
+Jun 06 11:08:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:08:51 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:08:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Configuration 0.62 ms (5)
+Jun 06 11:08:51 symfony [info] {sfWebDebugLogger} Factories 249.47 ms (1)
+Jun 06 11:08:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.nivo.slider.js" (/).
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:08:52 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (5)
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Factories 278.60 ms (1)
+Jun 06 11:08:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider1.jpg" (/).
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:08:52 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Configuration 0.73 ms (5)
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Factories 181.12 ms (1)
+Jun 06 11:08:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider4.jpg" (/).
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:08:52 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Configuration 0.65 ms (5)
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Factories 222.30 ms (1)
+Jun 06 11:08:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider3.jpg" (/).
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:08:52 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Configuration 15.89 ms (5)
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Factories 303.99 ms (1)
+Jun 06 11:08:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider0.jpg" (/).
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:08:52 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:08:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Configuration 0.67 ms (5)
+Jun 06 11:08:52 symfony [info] {sfWebDebugLogger} Factories 409.60 ms (1)
+Jun 06 11:08:53 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider2.jpg" (/).
+Jun 06 11:08:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:08:53 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:08:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:08:53 symfony [info] {sfWebDebugLogger} Configuration 0.72 ms (5)
+Jun 06 11:08:53 symfony [info] {sfWebDebugLogger} Factories 687.58 ms (1)
+Jun 06 11:13:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:13:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:13:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:13:14 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:13:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:13:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:13:14 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:13:14 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:13:14 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:13:14 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:13:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:13:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:14 symfony [info] {sfWebDebugLogger} Configuration 13.54 ms (10)
+Jun 06 11:13:14 symfony [info] {sfWebDebugLogger} Factories 73.12 ms (1)
+Jun 06 11:13:14 symfony [info] {sfWebDebugLogger} Action "main/index" 90.25 ms (1)
+Jun 06 11:13:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 18.90 ms (2)
+Jun 06 11:13:14 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 13.72 ms (1)
+Jun 06 11:13:14 symfony [info] {sfWebResponse} Send content (34797 o)
+Jun 06 11:13:15 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery-1.7.1.min.js" (/).
+Jun 06 11:13:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:15 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:15 symfony [info] {sfWebDebugLogger} Configuration 0.74 ms (5)
+Jun 06 11:13:15 symfony [info] {sfWebDebugLogger} Factories 214.90 ms (1)
+Jun 06 11:13:15 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.nivo.slider.js" (/).
+Jun 06 11:13:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:15 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:15 symfony [info] {sfWebDebugLogger} Configuration 0.65 ms (5)
+Jun 06 11:13:15 symfony [info] {sfWebDebugLogger} Factories 423.87 ms (1)
+Jun 06 11:13:15 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider2.jpg" (/).
+Jun 06 11:13:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:15 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:15 symfony [info] {sfWebDebugLogger} Configuration 0.63 ms (5)
+Jun 06 11:13:15 symfony [info] {sfWebDebugLogger} Factories 267.96 ms (1)
+Jun 06 11:13:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider1.jpg" (/).
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Configuration 0.64 ms (5)
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Factories 419.95 ms (1)
+Jun 06 11:13:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider0.jpg" (/).
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Configuration 0.73 ms (5)
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Factories 541.24 ms (1)
+Jun 06 11:13:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider3.jpg" (/).
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (5)
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Factories 636.11 ms (1)
+Jun 06 11:13:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider4.jpg" (/).
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (5)
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Factories 489.21 ms (1)
+Jun 06 11:13:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/bodybg.jpg" (/).
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Configuration 0.71 ms (5)
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Factories 484.21 ms (1)
+Jun 06 11:13:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/contentbg.jpg" (/).
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Configuration 8.78 ms (5)
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Factories 434.60 ms (1)
+Jun 06 11:13:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/shadow.png" (/).
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Configuration 7.24 ms (5)
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Factories 343.77 ms (1)
+Jun 06 11:13:16 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/loading.gif" (/).
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:13:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:13:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Configuration 0.64 ms (5)
+Jun 06 11:13:16 symfony [info] {sfWebDebugLogger} Factories 287.22 ms (1)
+Jun 06 11:15:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:15:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:15:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:15:39 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:15:39 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Jun 06 11:15:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 06 11:15:39 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:15:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:15:39 symfony [info] {sfWebDebugLogger} Configuration 13.26 ms (9)
+Jun 06 11:15:39 symfony [info] {sfWebDebugLogger} Factories 45.51 ms (1)
+Jun 06 11:15:39 symfony [info] {sfWebDebugLogger} Action "main/index" 119.11 ms (1)
+Jun 06 11:16:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:16:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:16:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:16:09 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:16:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:16:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:16:09 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:16:09 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:16:09 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:16:09 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Configuration 12.93 ms (10)
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Factories 44.90 ms (1)
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Action "main/index" 37.43 ms (1)
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.47 ms (2)
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 12.92 ms (1)
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send content (34796 o)
+Jun 06 11:16:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.nivo.slider.js" (/).
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:09 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Configuration 0.64 ms (5)
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Factories 155.98 ms (1)
+Jun 06 11:16:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery-1.7.1.min.js" (/).
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:09 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (5)
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Factories 382.78 ms (1)
+Jun 06 11:16:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider2.jpg" (/).
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:09 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Configuration 0.73 ms (5)
+Jun 06 11:16:09 symfony [info] {sfWebDebugLogger} Factories 227.15 ms (1)
+Jun 06 11:16:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider1.jpg" (/).
+Jun 06 11:16:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Configuration 0.61 ms (5)
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Factories 286.57 ms (1)
+Jun 06 11:16:10 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider3.jpg" (/).
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Configuration 16.70 ms (5)
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Factories 597.48 ms (1)
+Jun 06 11:16:10 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider0.jpg" (/).
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Configuration 0.69 ms (5)
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Factories 720.87 ms (1)
+Jun 06 11:16:10 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider4.jpg" (/).
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Configuration 7.14 ms (5)
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Factories 232.56 ms (1)
+Jun 06 11:16:10 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/bodybg.jpg" (/).
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (5)
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Factories 273.96 ms (1)
+Jun 06 11:16:10 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/js/jquery.nivo.slider.js" (/).
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Configuration 0.64 ms (5)
+Jun 06 11:16:10 symfony [info] {sfWebDebugLogger} Factories 323.94 ms (1)
+Jun 06 11:16:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider2.jpg" (/).
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Configuration 0.64 ms (5)
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Factories 171.02 ms (1)
+Jun 06 11:16:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider3.jpg" (/).
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Configuration 0.65 ms (5)
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Factories 243.02 ms (1)
+Jun 06 11:16:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider4.jpg" (/).
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Configuration 0.65 ms (5)
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Factories 288.39 ms (1)
+Jun 06 11:16:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider0.jpg" (/).
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Configuration 0.61 ms (5)
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Factories 375.71 ms (1)
+Jun 06 11:16:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/slider1.jpg" (/).
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Configuration 0.62 ms (5)
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Factories 497.04 ms (1)
+Jun 06 11:16:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/contentbg.jpg" (/).
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Configuration 0.63 ms (5)
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Factories 638.89 ms (1)
+Jun 06 11:16:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/loading.gif" (/).
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (5)
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Factories 180.87 ms (1)
+Jun 06 11:16:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/shadow.png" (/).
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 06 11:16:11 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /var/jt-web/lib/response/sfWebResponse.class.php:409))
+Jun 06 11:16:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Configuration 0.76 ms (5)
+Jun 06 11:16:11 symfony [info] {sfWebDebugLogger} Factories 242.15 ms (1)
+Jun 06 11:21:25 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:21:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:21:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:21:25 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:21:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:21:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:21:25 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:21:25 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:21:25 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:21:25 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:21:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:21:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:21:25 symfony [info] {sfWebDebugLogger} Configuration 18.55 ms (10)
+Jun 06 11:21:25 symfony [info] {sfWebDebugLogger} Factories 113.00 ms (1)
+Jun 06 11:21:25 symfony [info] {sfWebDebugLogger} Action "main/index" 69.57 ms (1)
+Jun 06 11:21:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.40 ms (2)
+Jun 06 11:21:25 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 13.47 ms (1)
+Jun 06 11:21:25 symfony [info] {sfWebResponse} Send content (34820 o)
+Jun 06 11:21:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:21:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:21:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:21:26 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:21:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:21:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:21:27 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:21:27 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:21:27 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:21:27 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:21:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:21:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:21:27 symfony [info] {sfWebDebugLogger} Configuration 1.22 ms (9)
+Jun 06 11:21:27 symfony [info] {sfWebDebugLogger} Factories 55.39 ms (1)
+Jun 06 11:21:27 symfony [info] {sfWebDebugLogger} Action "main/index" 83.79 ms (1)
+Jun 06 11:21:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.65 ms (2)
+Jun 06 11:21:27 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 15.44 ms (1)
+Jun 06 11:21:27 symfony [info] {sfWebResponse} Send content (34816 o)
+Jun 06 11:21:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:21:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:21:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:21:29 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:21:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:21:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:21:29 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:21:29 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:21:29 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:21:29 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:21:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:21:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:21:29 symfony [info] {sfWebDebugLogger} Configuration 1.12 ms (9)
+Jun 06 11:21:29 symfony [info] {sfWebDebugLogger} Factories 37.99 ms (1)
+Jun 06 11:21:29 symfony [info] {sfWebDebugLogger} Action "main/index" 32.80 ms (1)
+Jun 06 11:21:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.37 ms (2)
+Jun 06 11:21:29 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 10.09 ms (1)
+Jun 06 11:21:29 symfony [info] {sfWebResponse} Send content (34793 o)
+Jun 06 11:22:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:22:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:22:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:22:44 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:22:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:22:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:22:44 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+Jun 06 11:22:44 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+Jun 06 11:22:44 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:22:44 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:22:44 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:22:44 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:22:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:22:44 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+Jun 06 11:22:44 symfony [info] {sfWebResponse} Send header "Content-type: text/html"
+Jun 06 11:22:44 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (9)
+Jun 06 11:22:44 symfony [info] {sfWebDebugLogger} Factories 45.15 ms (1)
+Jun 06 11:22:44 symfony [info] {sfWebDebugLogger} Action "main/index" 42.54 ms (1)
+Jun 06 11:22:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.51 ms (2)
+Jun 06 11:22:44 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 12.22 ms (1)
+Jun 06 11:22:44 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/lib/response/sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+Jun 06 11:22:44 symfony [info] {sfWebResponse} Send content (34710 o)
+Jun 06 11:23:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:23:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:23:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:23:26 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:23:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:23:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:23:26 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:23:26 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:23:26 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:23:26 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:23:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:23:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:23:26 symfony [info] {sfWebDebugLogger} Configuration 1.34 ms (9)
+Jun 06 11:23:26 symfony [info] {sfWebDebugLogger} Factories 39.54 ms (1)
+Jun 06 11:23:26 symfony [info] {sfWebDebugLogger} Action "main/index" 37.47 ms (1)
+Jun 06 11:23:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.37 ms (2)
+Jun 06 11:23:26 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 10.90 ms (1)
+Jun 06 11:23:26 symfony [info] {sfWebResponse} Send content (34794 o)
+Jun 06 11:23:51 symfony [info] {sfPatternRouting} Match route "about" (/about) for /about with parameters array (  'module' => 'main',  'action' => 'about',)
+Jun 06 11:23:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:23:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:23:51 symfony [info] {mainActions} Call "mainActions->executeAbout()"
+Jun 06 11:23:51 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/aboutSuccess.php"
+Jun 06 11:23:51 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:23:51 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:23:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:23:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:23:51 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (9)
+Jun 06 11:23:51 symfony [info] {sfWebDebugLogger} Factories 40.75 ms (1)
+Jun 06 11:23:51 symfony [info] {sfWebDebugLogger} Action "main/about" 0.12 ms (1)
+Jun 06 11:23:51 symfony [info] {sfWebDebugLogger} View "Success" for "main/about" 22.62 ms (1)
+Jun 06 11:23:51 symfony [info] {sfWebResponse} Send content (32203 o)
+Jun 06 11:23:54 symfony [info] {sfPatternRouting} Match route "running" (/running) for /running with parameters array (  'module' => 'main',  'action' => 'running',)
+Jun 06 11:23:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:23:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:23:54 symfony [info] {mainActions} Call "mainActions->executeRunning()"
+Jun 06 11:23:54 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/runningSuccess.php"
+Jun 06 11:23:54 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:23:54 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:23:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:23:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:23:54 symfony [info] {sfWebDebugLogger} Configuration 1.17 ms (9)
+Jun 06 11:23:54 symfony [info] {sfWebDebugLogger} Factories 43.51 ms (1)
+Jun 06 11:23:54 symfony [info] {sfWebDebugLogger} Action "main/running" 0.13 ms (1)
+Jun 06 11:23:54 symfony [info] {sfWebDebugLogger} View "Success" for "main/running" 46.47 ms (1)
+Jun 06 11:23:54 symfony [info] {sfWebResponse} Send content (33374 o)
+Jun 06 11:23:58 symfony [info] {sfPatternRouting} Match route "pics" (/pics) for /pics with parameters array (  'module' => 'main',  'action' => 'pics',)
+Jun 06 11:23:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:23:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:23:58 symfony [info] {mainActions} Call "mainActions->executePics()"
+Jun 06 11:23:58 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/picsSuccess.php"
+Jun 06 11:23:58 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/apps/front/modules/main/templates/picsSuccess.php on line 35 (opendir(/var/homewww/web/images/mypics/): failed to open dir: No such file or directory)
+Jun 06 11:23:58 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:23:58 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:23:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:23:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:23:58 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (9)
+Jun 06 11:23:58 symfony [info] {sfWebDebugLogger} Factories 42.70 ms (1)
+Jun 06 11:23:58 symfony [info] {sfWebDebugLogger} Action "main/pics" 0.13 ms (1)
+Jun 06 11:23:58 symfony [info] {sfWebDebugLogger} View "Success" for "main/pics" 92.02 ms (1)
+Jun 06 11:23:58 symfony [info] {sfWebResponse} Send content (32938 o)
+Jun 06 11:24:15 symfony [info] {sfPatternRouting} Match route "links" (/links) for /links with parameters array (  'module' => 'main',  'action' => 'links',)
+Jun 06 11:24:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:24:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:24:15 symfony [info] {mainActions} Call "mainActions->executeLinks()"
+Jun 06 11:24:15 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/linksSuccess.php"
+Jun 06 11:24:15 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/linksSuccess.php on line 661 (Undefined index: fbsess)
+Jun 06 11:24:15 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:24:15 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:24:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:24:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:24:15 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (9)
+Jun 06 11:24:15 symfony [info] {sfWebDebugLogger} Factories 37.91 ms (1)
+Jun 06 11:24:15 symfony [info] {sfWebDebugLogger} Action "main/links" 0.12 ms (1)
+Jun 06 11:24:15 symfony [info] {sfWebDebugLogger} View "Success" for "main/links" 66.27 ms (1)
+Jun 06 11:24:15 symfony [info] {sfWebResponse} Send content (31746 o)
+Jun 06 11:24:16 symfony [info] {sfPatternRouting} Match route "projects" (/projects) for /projects with parameters array (  'module' => 'main',  'action' => 'projects',)
+Jun 06 11:24:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:24:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:24:16 symfony [info] {mainActions} Call "mainActions->executeProjects()"
+Jun 06 11:24:16 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/projectsSuccess.php"
+Jun 06 11:24:18 symfony [info] {sfPatternRouting} Match route "projects" (/projects) for /projects with parameters array (  'module' => 'main',  'action' => 'projects',)
+Jun 06 11:24:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:24:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:24:18 symfony [info] {mainActions} Call "mainActions->executeProjects()"
+Jun 06 11:24:18 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/projectsSuccess.php"
+Jun 06 11:24:23 symfony [info] {sfPatternRouting} Match route "links" (/links) for /links with parameters array (  'module' => 'main',  'action' => 'links',)
+Jun 06 11:24:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:24:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:24:23 symfony [info] {mainActions} Call "mainActions->executeLinks()"
+Jun 06 11:24:23 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/linksSuccess.php"
+Jun 06 11:24:23 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/linksSuccess.php on line 661 (Undefined index: fbsess)
+Jun 06 11:24:23 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:24:23 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:24:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:24:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:24:23 symfony [info] {sfWebDebugLogger} Configuration 1.14 ms (9)
+Jun 06 11:24:23 symfony [info] {sfWebDebugLogger} Factories 45.81 ms (1)
+Jun 06 11:24:23 symfony [info] {sfWebDebugLogger} Action "main/links" 0.12 ms (1)
+Jun 06 11:24:23 symfony [info] {sfWebDebugLogger} View "Success" for "main/links" 12.06 ms (1)
+Jun 06 11:24:23 symfony [info] {sfWebResponse} Send content (31745 o)
+Jun 06 11:24:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:24:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:24:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:24:43 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:24:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:24:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:24:43 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:24:43 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:24:43 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:24:43 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:24:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:24:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:24:43 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (9)
+Jun 06 11:24:43 symfony [info] {sfWebDebugLogger} Factories 47.03 ms (1)
+Jun 06 11:24:43 symfony [info] {sfWebDebugLogger} Action "main/index" 40.60 ms (1)
+Jun 06 11:24:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.45 ms (2)
+Jun 06 11:24:43 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 11.91 ms (1)
+Jun 06 11:24:43 symfony [info] {sfWebResponse} Send content (34826 o)
+Jun 06 11:25:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:25:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:25:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:25:23 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:25:23 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:25:23 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:25:23 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:23 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:25:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:25:23 symfony [info] {sfWebResponse} Send content (31367 o)
+Jun 06 11:25:30 symfony [info] {sfPatternRouting} Match route "about" (/about) for /about with parameters array (  'module' => 'main',  'action' => 'about',)
+Jun 06 11:25:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:25:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:25:30 symfony [info] {mainActions} Call "mainActions->executeAbout()"
+Jun 06 11:25:30 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/aboutSuccess.php"
+Jun 06 11:25:30 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:30 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:25:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:25:30 symfony [info] {sfWebResponse} Send content (30993 o)
+Jun 06 11:25:31 symfony [info] {sfPatternRouting} Match route "running" (/running) for /running with parameters array (  'module' => 'main',  'action' => 'running',)
+Jun 06 11:25:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:25:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:25:31 symfony [info] {mainActions} Call "mainActions->executeRunning()"
+Jun 06 11:25:31 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/runningSuccess.php"
+Jun 06 11:25:31 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:31 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:25:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:25:31 symfony [info] {sfWebResponse} Send content (32160 o)
+Jun 06 11:25:33 symfony [info] {sfPatternRouting} Match route "pics" (/pics) for /pics with parameters array (  'module' => 'main',  'action' => 'pics',)
+Jun 06 11:25:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:25:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:25:33 symfony [info] {mainActions} Call "mainActions->executePics()"
+Jun 06 11:25:33 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/picsSuccess.php"
+Jun 06 11:25:33 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/apps/front/modules/main/templates/picsSuccess.php on line 35 (opendir(/var/homewww/web/images/mypics/): failed to open dir: No such file or directory)
+Jun 06 11:25:33 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:33 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:25:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:25:33 symfony [info] {sfWebResponse} Send content (32106 o)
+Jun 06 11:25:34 symfony [info] {sfPatternRouting} Match route "links" (/links) for /links with parameters array (  'module' => 'main',  'action' => 'links',)
+Jun 06 11:25:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:25:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:25:34 symfony [info] {mainActions} Call "mainActions->executeLinks()"
+Jun 06 11:25:34 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/linksSuccess.php"
+Jun 06 11:25:34 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/linksSuccess.php on line 661 (Undefined index: fbsess)
+Jun 06 11:25:34 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:34 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:25:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:25:34 symfony [info] {sfWebResponse} Send content (30911 o)
+Jun 06 11:25:35 symfony [info] {sfPatternRouting} Match route "projects" (/projects) for /projects with parameters array (  'module' => 'main',  'action' => 'projects',)
+Jun 06 11:25:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:25:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:25:35 symfony [info] {mainActions} Call "mainActions->executeProjects()"
+Jun 06 11:25:35 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/projectsSuccess.php"
+Jun 06 11:25:37 symfony [info] {sfPatternRouting} Match route "links" (/links) for /links with parameters array (  'module' => 'main',  'action' => 'links',)
+Jun 06 11:25:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:25:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:25:37 symfony [info] {mainActions} Call "mainActions->executeLinks()"
+Jun 06 11:25:37 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/linksSuccess.php"
+Jun 06 11:25:37 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/linksSuccess.php on line 661 (Undefined index: fbsess)
+Jun 06 11:25:37 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:37 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:25:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:25:37 symfony [info] {sfWebResponse} Send content (30911 o)
+Jun 06 11:25:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:25:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:25:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:25:39 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:25:39 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:25:39 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:25:39 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:39 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:25:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:25:39 symfony [info] {sfWebResponse} Send content (31335 o)
+Jun 06 11:25:40 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:25:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:25:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:25:40 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:25:40 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:25:40 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:25:40 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:40 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:25:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:25:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:25:40 symfony [info] {sfWebResponse} Send content (31330 o)
+Jun 06 11:55:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 06 11:55:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:55:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:55:50 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 06 11:55:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 06 11:55:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 06 11:55:50 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 06 11:55:50 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined variable: _SESSIN)
+Jun 06 11:55:50 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:55:50 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:55:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:55:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:55:50 symfony [info] {sfWebDebugLogger} Configuration 193.17 ms (10)
+Jun 06 11:55:50 symfony [info] {sfWebDebugLogger} Factories 310.25 ms (1)
+Jun 06 11:55:50 symfony [info] {sfWebDebugLogger} Action "main/index" 244.20 ms (1)
+Jun 06 11:55:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 48.62 ms (2)
+Jun 06 11:55:50 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 103.97 ms (1)
+Jun 06 11:55:50 symfony [info] {sfWebResponse} Send content (34803 o)
+Jun 06 11:55:58 symfony [info] {sfPatternRouting} Match route "projects" (/projects) for /projects with parameters array (  'module' => 'main',  'action' => 'projects',)
+Jun 06 11:55:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:55:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:55:58 symfony [info] {mainActions} Call "mainActions->executeProjects()"
+Jun 06 11:55:58 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/projectsSuccess.php"
+Jun 06 11:56:13 symfony [info] {sfPatternRouting} Match route "links" (/links) for /links with parameters array (  'module' => 'main',  'action' => 'links',)
+Jun 06 11:56:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:56:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:56:13 symfony [info] {mainActions} Call "mainActions->executeLinks()"
+Jun 06 11:56:13 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/linksSuccess.php"
+Jun 06 11:56:13 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/linksSuccess.php on line 661 (Undefined index: fbsess)
+Jun 06 11:56:13 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:56:13 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:56:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:56:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:56:13 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (9)
+Jun 06 11:56:13 symfony [info] {sfWebDebugLogger} Factories 40.71 ms (1)
+Jun 06 11:56:13 symfony [info] {sfWebDebugLogger} Action "main/links" 0.25 ms (1)
+Jun 06 11:56:13 symfony [info] {sfWebDebugLogger} View "Success" for "main/links" 20.47 ms (1)
+Jun 06 11:56:13 symfony [info] {sfWebResponse} Send content (31742 o)
+Jun 06 11:56:17 symfony [info] {sfPatternRouting} Match route "pics" (/pics) for /pics with parameters array (  'module' => 'main',  'action' => 'pics',)
+Jun 06 11:56:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:56:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:56:17 symfony [info] {mainActions} Call "mainActions->executePics()"
+Jun 06 11:56:17 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/picsSuccess.php"
+Jun 06 11:56:17 symfony [warning] {sfWebDebugLogger}  Warning at /var/jt-web/apps/front/modules/main/templates/picsSuccess.php on line 35 (opendir(/var/homewww/web/images/mypics/): failed to open dir: No such file or directory)
+Jun 06 11:56:17 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:56:17 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:56:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:56:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:56:17 symfony [info] {sfWebDebugLogger} Configuration 1.10 ms (9)
+Jun 06 11:56:17 symfony [info] {sfWebDebugLogger} Factories 37.17 ms (1)
+Jun 06 11:56:17 symfony [info] {sfWebDebugLogger} Action "main/pics" 0.13 ms (1)
+Jun 06 11:56:17 symfony [info] {sfWebDebugLogger} View "Success" for "main/pics" 26.35 ms (1)
+Jun 06 11:56:17 symfony [info] {sfWebResponse} Send content (32937 o)
+Jun 06 11:56:18 symfony [info] {sfPatternRouting} Match route "running" (/running) for /running with parameters array (  'module' => 'main',  'action' => 'running',)
+Jun 06 11:56:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:56:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:56:18 symfony [info] {mainActions} Call "mainActions->executeRunning()"
+Jun 06 11:56:18 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/runningSuccess.php"
+Jun 06 11:56:18 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:56:18 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:56:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:56:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:56:18 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (9)
+Jun 06 11:56:18 symfony [info] {sfWebDebugLogger} Factories 40.28 ms (1)
+Jun 06 11:56:18 symfony [info] {sfWebDebugLogger} Action "main/running" 0.12 ms (1)
+Jun 06 11:56:18 symfony [info] {sfWebDebugLogger} View "Success" for "main/running" 17.32 ms (1)
+Jun 06 11:56:19 symfony [info] {sfWebResponse} Send content (33373 o)
+Jun 06 11:56:21 symfony [info] {sfPatternRouting} Match route "links" (/links) for /links with parameters array (  'module' => 'main',  'action' => 'links',)
+Jun 06 11:56:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 06 11:56:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 06 11:56:21 symfony [info] {mainActions} Call "mainActions->executeLinks()"
+Jun 06 11:56:21 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/linksSuccess.php"
+Jun 06 11:56:21 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/linksSuccess.php on line 661 (Undefined index: fbsess)
+Jun 06 11:56:21 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:56:21 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 06 11:56:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 06 11:56:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 06 11:56:21 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (9)
+Jun 06 11:56:21 symfony [info] {sfWebDebugLogger} Factories 39.19 ms (1)
+Jun 06 11:56:21 symfony [info] {sfWebDebugLogger} Action "main/links" 0.12 ms (1)
+Jun 06 11:56:21 symfony [info] {sfWebDebugLogger} View "Success" for "main/links" 11.47 ms (1)
+Jun 06 11:56:21 symfony [info] {sfWebResponse} Send content (31748 o)

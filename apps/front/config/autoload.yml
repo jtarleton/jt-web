@@ -1,7 +1,7 @@
 autoload:
   ar_php:
-    path: /var/homewww/lib/I18N/
+    path: /var/jt-web/lib/I18N/
     recursive: on
   fb:
-    path: /var/homewww/lib/Facebook/
+    path: /var/jt-web/lib/Facebook/
     recursive: on

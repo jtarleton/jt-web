@@ -27,7 +27,7 @@ Doctrine_Manager::getInstance()->bindComponent('JtTermTaxonomy', 'doctrine');
  * @method JtTermTaxonomy setParent()           Sets the current record's "parent" value
  * @method JtTermTaxonomy setCount()            Sets the current record's "count" value
  * 
- * @package    homewww
+ * @package    jtweb
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

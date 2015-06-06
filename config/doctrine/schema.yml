@@ -1,0 +1,667 @@
+AnnualReport:
+  connection: doctrine
+  tableName: AnnualReport
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    year:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    gross_earnings:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    fixed_expenses:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    total_spend:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    fed_taxes:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    state_taxes:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    city_taxes:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    retirement_savings:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    cc_balance_start:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    cc_balance_end:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    cc_balance_diff:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+ChipotleOrders:
+  connection: doctrine
+  tableName: ChipotleOrders
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    order_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    quantity:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    item_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    choice_description:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    item_price:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+City:
+  connection: doctrine
+  tableName: City
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(35)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    countrycode:
+      type: string(3)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    district:
+      type: string(20)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    population:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+  relations:
+    Country:
+      local: countrycode
+      foreign: code
+      type: one
+Country:
+  connection: doctrine
+  tableName: Country
+  columns:
+    code:
+      type: string(3)
+      fixed: true
+      unsigned: false
+      primary: true
+      autoincrement: false
+    name:
+      type: string(52)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    continent:
+      type: enum(13)
+      fixed: false
+      unsigned: false
+      values:
+        - Asia
+        - Europe
+        - 'North America'
+        - Africa
+        - Oceania
+        - Antarctica
+        - 'South America'
+      primary: false
+      default: Asia
+      notnull: true
+      autoincrement: false
+    region:
+      type: string(26)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    surfacearea:
+      type: float(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.00'
+      notnull: true
+      autoincrement: false
+    indepyear:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    population:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    lifeexpectancy:
+      type: float(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    gnp:
+      type: float(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    gnpold:
+      type: float(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    localname:
+      type: string(45)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    governmentform:
+      type: string(45)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    headofstate:
+      type: string(60)
+      fixed: true
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    capital:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    code2:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+  relations:
+    City:
+      local: code
+      foreign: countrycode
+      type: many
+    CountryLanguage:
+      local: code
+      foreign: countrycode
+      type: many
+CountryLanguage:
+  connection: doctrine
+  tableName: CountryLanguage
+  columns:
+    countrycode:
+      type: string(3)
+      fixed: true
+      unsigned: false
+      primary: true
+      autoincrement: false
+    language:
+      type: string(30)
+      fixed: true
+      unsigned: false
+      primary: true
+      autoincrement: false
+    isofficial:
+      type: enum(1)
+      fixed: false
+      unsigned: false
+      values:
+        - T
+        - F
+      primary: false
+      default: F
+      notnull: true
+      autoincrement: false
+    percentage:
+      type: float(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0.0'
+      notnull: true
+      autoincrement: false
+  relations:
+    Country:
+      local: countrycode
+      foreign: code
+      type: one
+JtPosts:
+  connection: doctrine
+  tableName: JtPosts
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    post_author:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    post_date:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    post_date_gmt:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    post_content:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    post_title:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    post_excerpt:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    post_status:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: publish
+      notnull: true
+      autoincrement: false
+    comment_status:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: open
+      notnull: true
+      autoincrement: false
+    ping_status:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: open
+      notnull: true
+      autoincrement: false
+    post_password:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    post_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    to_ping:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    pinged:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    post_modified:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    post_modified_gmt:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    post_content_filtered:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    post_parent:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    guid:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    menu_order:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    post_type:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: post
+      notnull: true
+      autoincrement: false
+    post_mime_type:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    comment_count:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+JtSessions:
+  connection: doctrine
+  tableName: JtSessions
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    session_id:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ip:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+JtTermRelationships:
+  connection: doctrine
+  tableName: JtTermRelationships
+  columns:
+    object_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: false
+    term_taxonomy_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: false
+    term_order:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+JtTermTaxonomy:
+  connection: doctrine
+  tableName: JtTermTaxonomy
+  columns:
+    term_taxonomy_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    term_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    taxonomy:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    parent:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    count:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+JtTerms:
+  connection: doctrine
+  tableName: JtTerms
+  columns:
+    term_id:
+      type: integer(8)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    slug:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    term_group:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false

@@ -13,7 +13,7 @@ $helper = new \Facebook\FacebookRedirectLoginHelper('http://www.jamestarleton.co
 $scopes=array('scope'=>'public_profile');
 $loginUrl = $helper->getLoginUrl($scopes); ?>
 
-<?php if($_SESSIN['fbsess']): ?>
+<?php if($_SESSION['fbsess']): ?>
 
 
 <b>March 8, 2015</b>

@@ -5,6 +5,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn:      mysql:host=localhost;dbname=jtweb
+      dsn:      mysql:unix_socket=/var/run/mysqld/mysqld.sock;dbname=symfony
       username: root
-      password: 
+      password: pro447
