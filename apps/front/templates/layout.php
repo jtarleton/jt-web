@@ -1,43 +1,99 @@
+<?php $sess = $_SESSION['fbsess']; 
+
+$valid = false;
+if(is_object($sess)) {
+
+$info = $sess->getSessionInfo();
+
+$valid = $info->isValid();
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php include_http_metas() ?>
     	<?php include_metas() ?>
     	<?php include_title() ?>
-    	<link rel="shortcut icon" href="https://www.jamestarleton.com/favicon.ico" />
+    	<link rel="shortcut icon" href="https://www.jamestarleton.com/favicon.ico">
+
+
+
+<link rel="stylesheet" type="text/css" media="all" href="https://www.jamestarleton.com/css/boots/bootstrap-3.3.0/dist/css/bootstrap.css">
+
+
     	<?php include_stylesheets() ?>
-    	<?php include_javascripts() ?><script type="text/javascript" src="https://www.jamestarleton.com/js/jquery-1.7.1.min.js"></script> 
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.3/css/jquery.dataTables.css">
+    	<?php include_javascripts() ?>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.3/css/jquery.dataTables.css" type="text/css" media="all">
 
 
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.3/js/jquery.dataTables.min.js"></script>
+
+
 <script type="text/javascript">
-$(document).ready(function() {
-    $('#example').DataTable();
+
+jQuery(document).ready(function() {
+    jQuery('#example').DataTable();
 } );
+
 </script>
+
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
 	<meta name="description" content="Your description goes here" />
+
+
 	<meta name="keywords" content="your,keywords,goes,here" />
+
+
 	<meta name="author" content="Your Name" />
-	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Droid+Sans' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" media="all" href="https://www.jamestarleton.com/css/bootflat/css/bootflat.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="https://www.jamestarleton.com/css/inland-wood.css" />
+
+
+	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Droid+Sans" rel="stylesheet" type="text/css">
+
+ 	<link rel="stylesheet" type="text/css" href="https://www.jamestarleton.com/css/bootflat.github.io-master/css/site.css" media="all">
+
+
+	<link rel="stylesheet" type="text/css" media="all" href="https://www.jamestarleton.com/css/inland-wood.css">
 	
 	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+
+
 	<script type="text/javascript" src="https://www.jamestarleton.com/js/jquery.nivo.slider.js"></script>
-	<title>James's Home Page</title>
+
+
+
+
 </head>
 
-<body>
-<div id="wrapper960" class="clearfix">
+<body><div id="wrapper960" class="clearfix">
+
+
 	<div id="toplinks">
+
+
 		<ul class="toplinks_links">
 
+<?php if(sfContext::getInstance()->getUser()->isAuthenticated() ): ?>
+		<li>
+<a href="https://www.jamestarleton.com/musicvideos">Music</a>
+</li>
 			<li><a href="https://www.jamestarleton.com/phpbooks">PHP Books</a></li>
 			<li><a href="https://www.jamestarleton.com/tutorials">PHP Tutorials</a></li>
 			<!-- <li><a href="top3">Top link #3</a></li>
 			<li><a href="top4">Top link #4</a></li> -->
+
+<?php endif; ?>
+
 		</ul>
 	</div>
 
@@ -49,6 +105,9 @@ $(document).ready(function() {
 		<div id="nav" class="clearfix">
 			<ul>
 				<li><a class="current" href="https://www.jamestarleton.com/">Home</a></li>
+
+<?php if(sfContext::getInstance()->getUser()->isAuthenticated()): ?>
+
 				<li><a href="https://www.jamestarleton.com/about">About</a></li>
 
  <li><a href="https://www.jamestarleton.com/running
@@ -64,26 +123,36 @@ $(document).ready(function() {
 				<!-- <li><a href="races">Races</a></li> >
 				<li><a href="https://www.jamestarleton.com/contact">Contact</a></li>
 				--><li> 
-
+<?php endif; ?>
 <?php
 
-$sess = $_SESSION['fbsess'];
-
+/*
 
 $helper = new \Facebook\FacebookRedirectLoginHelper('https://www.jamestarleton.com/fbredirect');
 $loginUrl = $helper->getLoginUrl();
 
-$valid = false;
-if(is_object($sess)){
-	$info = $sess->getSessionInfo();
-	$valid = $info->isValid();
+
+
+if(!sfContext::getInstance()->getUser()->isAuthenticated() && ( 
+empty($sess) || !$valid )
+) {
+
+echo '<a href="' . $loginUrl . '">Login w/ FB</a>';
+} 
+
+elseif( !sfContext::getInstance()->getUser()->isAuthenticated() ) {
+
+?>
+<a href="https://www.jamestarleton.com/frontdoor">Login</a>
+<?php
+
+
 }
 
+elseif($sess && $valid) {
+*/
 
-if(empty($sess) || !$valid ) {
-
-echo '<a href="' . $loginUrl . '">Login</a>';
-} else {
+/* 
 ?><span style="font-weight:800;"><?php 
 echo 'Welcome '; //.  $sess->getSessionInfo()->getId();
 
@@ -116,12 +185,12 @@ $response2 = $request2->execute();
 $graphObject2 = $response2->getGraphObject();
 
 
-
-?><img src="<?php echo $graphObject2->getProperty('url'); ?>" style="
+*
+?><img src="<php echo $graphObject2->getProperty('url'); ?>" style="
 width:50px; height:50px;
 "></img>
-<?php 
-
+<?php */ 
+/*
  //->getPropertyNames());
 //[0] => id [1] => first_name [2] => gender [3] => last_name [4] => link [5] => locale [6] => name [7] => timezone [8] => updated_time [9] => verified
 //
@@ -129,7 +198,18 @@ echo $graphObject->getProperty('first_name');
 ?>
 <a href="https://www.facebook.com/logout.php?access_token=<?php echo $_SESSION['fbat']; ?>&confirm=1&next=https://www.jamestarleton.com/logout">Logout</a>
 </span>
-<?php } ?>
+<?php } 
+
+*/
+if($sf_user->isAuthenticated())
+{
+?>
+<a href="https://www.jamestarleton.com/logout">Logout</a>
+<?php
+}
+
+
+?>
 
 </li>
 			</ul>

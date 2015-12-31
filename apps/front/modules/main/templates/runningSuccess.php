@@ -3,8 +3,9 @@
 <p>
 <img src="http://i156.photobucket.com/albums/t23/urbanilluminati1/wallpaper2.jpg" style="width:444px; height:333px;float:left; margin-right:20px; margin-bottom:20px;">
 Running is a topic I try not to evangelize or bore non-runners with, but as this is my website, I am going to use it to list my favorite races, running books and articles, and gear.<br />
-</p><p>If you run, or want to start, and have an account on <a href="http://www.dailymile.com"> Dailymile</a>, <a href="http://www.strava.com">Strava</a>, or <a href="http://www.athlinks.com">Athlinks</a>, please connect!
 </p>
+
+<p>See you on the roads!</p>
 <br />
 <br />
 <h2>Running Books</h2>

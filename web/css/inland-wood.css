@@ -7,6 +7,38 @@ Nivo Slider v2.7.1 by Gilbert Pellegrom - https://nivo.dev7studios.com/
 Photos by Thomas Wallström.
 */
 
+
+
+
+
+
+
+
+
+*{border:0;font:inherit; font-weight:645;font-size:99.2%;margin:0;padding:0;vertical-align:baseline;}
+
+/* HTML elements */
+body{background:#101010 url(https://www.jamestarleton.com/images/bodybg.jpg) top left;color:#444;font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:13px;line-height:1.6em;}
+a{color:#383838;text-decoration:none;}
+a:hover{color:#555;text-decoration:none;}
+a img{border:none;}
+h1,h2,h3,h4{clear:left;color:#fff;font-weight:400;margin:0.7em 0;font-family:'Yanone Kaffeesatz';}
+h1{font-size:2.6em;}
+h2{font-size:2.4em;}
+h3{font-size:1.9em;}
+p,ul{margin:0 0 20px 0;}
+i,em {font-style:italic;}
+b,strong {font-weight:700;}
+
+
+
+
+
+
+
+
+
+
 /* 
 a{color:#383838;text-decoration:none;}
 a:hover{color:#555;text-decoration:none;}

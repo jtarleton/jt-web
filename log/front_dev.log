@@ -777,3 +777,32 @@ Jun 06 11:56:21 symfony [info] {sfWebDebugLogger} Factories 39.19 ms (1)
 Jun 06 11:56:21 symfony [info] {sfWebDebugLogger} Action "main/links" 0.12 ms (1)
 Jun 06 11:56:21 symfony [info] {sfWebDebugLogger} View "Success" for "main/links" 11.47 ms (1)
 Jun 06 11:56:21 symfony [info] {sfWebResponse} Send content (31748 o)
+Jun 24 03:21:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 24 03:21:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 24 03:21:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 24 03:21:35 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 24 03:21:35 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Jun 24 03:21:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jun 24 03:21:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 24 03:21:35 symfony [info] {sfWebDebugLogger} Configuration 197.59 ms (9)
+Jun 24 03:21:35 symfony [info] {sfWebDebugLogger} Factories 351.37 ms (1)
+Jun 24 03:21:35 symfony [info] {sfWebDebugLogger} Action "main/index" 144.05 ms (1)
+Jun 24 03:22:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 24 03:22:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 24 03:22:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 24 03:22:36 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 24 03:22:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 24 03:22:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.term_id AS j__term_id, j.name AS j__name, j.slug AS j__slug, j.term_group AS j__term_group FROM JtTerms j - ()
+Jun 24 03:22:36 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/main/templates/indexSuccess.php"
+Jun 24 03:22:36 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/modules/main/templates/indexSuccess.php on line 16 (Undefined index: fbsess)
+Jun 24 03:22:36 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Jun 24 03:22:36 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Jun 24 03:22:36 symfony [notice] {sfWebDebugLogger}  Notice at /var/jt-web/apps/front/templates/layout.php on line 70 (Undefined index: fbsess)
+Jun 24 03:22:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 24 03:22:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 24 03:22:36 symfony [info] {sfWebDebugLogger} Configuration 406.42 ms (9)
+Jun 24 03:22:36 symfony [info] {sfWebDebugLogger} Factories 93.76 ms (1)
+Jun 24 03:22:36 symfony [info] {sfWebDebugLogger} Action "main/index" 617.45 ms (1)
+Jun 24 03:22:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 503.46 ms (2)
+Jun 24 03:22:36 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 36.75 ms (1)
+Jun 24 03:22:37 symfony [info] {sfWebResponse} Send content (35549 o)

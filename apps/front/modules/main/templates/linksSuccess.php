@@ -1,5 +1,4 @@
 <?php use_helper('sort'); ?>
-<ul>
 <?php 
  
 $v = '[{
@@ -657,8 +656,16 @@ $v = '[{
   "text": "Simple Bank"
 }]';
 $vals = json_decode($v, true);
-$vals =subval_sort($vals, 'text');
+$vals =subval_sort($vals, 'cat');
 if($_SESSION['fbsess']):
+?>
+
+<table class="dataTable table-striped"><tbody>
+<?php
 foreach( $vals as $link):
-?><li><?php echo link_to($link['text'], $link['url']); ?></li>
-<?php endforeach; endif; ?></ul>
+?>
+<tr>
+<td><?php echo $link['cat']; ?></td><td><?php echo link_to($link['text'], $link['url']); ?></td></tr>
+<?php endforeach; ?>
+</tbody>
+<?php endif; ?></table>

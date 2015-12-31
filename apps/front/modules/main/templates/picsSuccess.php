@@ -32,7 +32,7 @@ https://www.jamestarleton.com/images/mypics/beautiful-scenery-wallpapers-184.jpg
       </div>
     </div>
 <?php 
-if ($handle = opendir('/var/homewww/web/images/mypics/')):
+if ($handle = opendir('/var/jt-web/web/images/mypics/')):
 
  while (false !== ($file = readdir($handle))) :  
 

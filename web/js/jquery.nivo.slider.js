@@ -140,7 +140,7 @@
                 });
             }
             
-            $('a.nivo-prevNav', slider).live('click', function(){
+            $('a.nivo-prevNav', slider).bind('click', function(){
                 if(vars.running) return false;
                 clearInterval(timer);
                 timer = '';
@@ -148,7 +148,7 @@
                 nivoRun(slider, kids, settings, 'prev');
             });
             
-            $('a.nivo-nextNav', slider).live('click', function(){
+            $('a.nivo-nextNav', slider).bind('click', function(){
                 if(vars.running) return false;
                 clearInterval(timer);
                 timer = '';
@@ -179,7 +179,7 @@
             //Set initial active link
             $('.nivo-controlNav a:eq('+ vars.currentSlide +')', slider).addClass('active');
             
-            $('.nivo-controlNav a', slider).live('click', function(){
+            $('.nivo-controlNav a', slider).bind('click', function(){
                 if(vars.running) return false;
                 if($(this).hasClass('active')) return false;
                 clearInterval(timer);

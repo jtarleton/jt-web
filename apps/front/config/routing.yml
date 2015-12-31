@@ -17,6 +17,10 @@ pics:
   url: /pics
   param: { module: main, action:pics }
 
+frontdoor:
+  url: /frontdoor
+  param: { module: security, action:login }
+
 arunnersplace:
   url: /arunnersplace
   param: { module: main, action: arunnersplace }
@@ -41,6 +45,7 @@ homepage2:
 logout:
   url: /logout
   param: { module:main, action:logout }
+
 fb:
   url: /fb
   param: { module: main, action:fb }

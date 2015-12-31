@@ -116,12 +116,18 @@ public function executeFb($request){
 //$this->helper = new \Facebook\FacebookRedirectLoginHelper('http://www.jamestarleton.com/fbredirect');
 //$this->loginUrl = $this->helper->getLoginUrl();
 }
+
+
 public function executeLogout(){
 
 $_SESSION['fbat'] = null;
 $_SESSION['fbsess']= null;
-
+$this->redirect('security/logout');
 }
+
+
+
+
 public function executeFbredirect($request){
 
 //in case were visiting this page already logged in for some reason
@@ -134,9 +140,11 @@ try {
 if(empty($this->session))
     $this->session = $this->helper->getSessionFromRedirect();
     $request->redirect('main/index');
-} catch(FacebookRequestException $ex) {
+} 
+catch(FacebookRequestException $ex) {
     $this->renderText($ex->getMessage());
-} catch(\Exception $ex) {
+} 
+catch(\Exception $ex) {
 $this->renderText($ex->getMessage());
     // When validation fails or other local issues
 }
@@ -145,6 +153,7 @@ if (!empty($this->session)) {
 $_SESSION['fbat'] = $this->session->getToken();
 $_SESSION['fbsess'] = $this->session; 
   // Logged in.
+$this->getUser()->setAuthenticated(true);
 }
 
 }
