@@ -42,7 +42,7 @@ $ips=array();
 foreach( Doctrine_Query::create()->select('j.geoip_addr')->from('JtGeodata j')->fetchArray() as $row) {
 	$ips[$row['geoip_addr']] = $row['geoip_addr'];
 }
-if(!in_array( $_SERVER['GEOIP_ADDR'], $ips) ){
+if(!in_array( @$_SERVER['GEOIP_ADDR'], $ips) ){
 	JtGeodataTable::doIns();
 }
 		// Invalidate the session, but save flash messages

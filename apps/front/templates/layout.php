@@ -1,4 +1,4 @@
-<?php $sess = $_SESSION['fbsess']; 
+<?php $sess = @$_SESSION['fbsess']; 
 
 $valid = false;
 if(is_object($sess)) {

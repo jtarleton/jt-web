@@ -10,7 +10,7 @@
  */
 //namespace Httpful;
 use \Httpful\Request;
-use \Facebook;
+//use \Facebook;
 class mainActions extends sfActions
 {
 public function executeArunnersplace(){ 

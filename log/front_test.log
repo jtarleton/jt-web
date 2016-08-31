@@ -19,3 +19,187 @@ Aug 31 19:48:53 symfony [info] {sfFilterChain} Executing filter "genFilter"
 Aug 31 19:48:53 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
 Aug 31 19:48:53 symfony [info] {sfWebResponse} Send content (107 o)
 Aug 31 19:48:53 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:18:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:18:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /geodata/index with parameters array (  'module' => 'geodata',  'action' => 'index',)
+Aug 31 20:18:51 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:18:51 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:18:51 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:18:51 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:18:51 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:18:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:18:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:18:52 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:25:08 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:25:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /geodata/index with parameters array (  'module' => 'geodata',  'action' => 'index',)
+Aug 31 20:25:08 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:25:08 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:25:08 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:25:08 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:25:08 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:25:08 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:25:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:25:09 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:25:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:25:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:25:09 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:26:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:26:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:26:45 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:26:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:26:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:26:46 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:27:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:27:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:27:29 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:28:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:28:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:28:52 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:29:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:29:19 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:29:19 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:29:55 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:29:55 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:29:55 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:30:17 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:30:17 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:30:17 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:30:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:30:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:30:28 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:31:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:31:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:31:58 symfony [err] {RuntimeException} PHP sent a "warning" error at /var/jt-web/apps/front/modules/main/actions/actions.class.php line 13 (The use statement with non-compound name 'Facebook' has no effect)
+Aug 31 20:32:56 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:32:57 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:32:57 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:32:57 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:32:57 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:32:57 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:32:57 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:33:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:33:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:33:35 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:33:35 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:33:35 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:33:35 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:33:35 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:34:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:34:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:34:10 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:34:10 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:34:10 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:34:10 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:34:10 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:35:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:35:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:35:05 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:35:05 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:35:05 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:35:05 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:35:05 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:35:05 symfony [info] {sfPatternRouting} Match route "frontdoor" (/frontdoor) for /frontdoor with parameters array (  'module' => 'security',  'action' => 'login',)
+Aug 31 20:35:05 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:35:05 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:35:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 20:35:05 symfony [info] {securityActions} Call "securityActions->executeLogin()"
+Aug 31 20:35:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:35:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:35:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:35:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.geoip_addr AS j__geoip_addr FROM JtGeodata j - ()
+Aug 31 20:35:05 symfony [err] {RuntimeException} PHP sent a "notice" error at /var/jt-web/apps/front/modules/security/actions/actions.class.php line 45 (Undefined index: GEOIP_ADDR)
+Aug 31 20:35:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:35:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:35:49 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:35:49 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:35:49 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:35:49 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:35:49 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:35:49 symfony [info] {sfPatternRouting} Match route "frontdoor" (/frontdoor) for /frontdoor with parameters array (  'module' => 'security',  'action' => 'login',)
+Aug 31 20:35:49 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:35:49 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:35:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 20:35:49 symfony [info] {securityActions} Call "securityActions->executeLogin()"
+Aug 31 20:35:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:35:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:35:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:35:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.geoip_addr AS j__geoip_addr FROM JtGeodata j - ()
+Aug 31 20:35:49 symfony [err] {RuntimeException} PHP sent a "notice" error at /var/jt-web/lib/model/doctrine/JtGeodataTable.class.php line 30 (Undefined index: GEOIP_ADDR)
+Aug 31 20:37:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:37:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:37:02 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:37:02 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:37:02 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:37:02 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:37:02 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:37:02 symfony [info] {sfPatternRouting} Match route "frontdoor" (/frontdoor) for /frontdoor with parameters array (  'module' => 'security',  'action' => 'login',)
+Aug 31 20:37:02 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:37:02 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:37:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 20:37:02 symfony [info] {securityActions} Call "securityActions->executeLogin()"
+Aug 31 20:37:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:37:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:37:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:37:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.geoip_addr AS j__geoip_addr FROM JtGeodata j - ()
+Aug 31 20:37:02 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO JtGeodata (id, geoip_addr, geoip_continent_code, geoip_country_code, geoip_country_name, geoip_city, geoip_region, geoip_region_name, geoip_dma_code, geoip_metro_code, geoip_area_code, geoip_latitude, geoip_longitude) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (, , , , , , , , , , , , )
+Aug 31 20:37:02 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'geoip_addr' cannot be null
+Aug 31 20:40:17 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:40:19 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:40:19 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:40:19 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:40:19 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:40:19 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:40:19 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:40:19 symfony [info] {sfPatternRouting} Match route "frontdoor" (/frontdoor) for /frontdoor with parameters array (  'module' => 'security',  'action' => 'login',)
+Aug 31 20:40:19 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:40:19 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:40:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 20:40:19 symfony [info] {securityActions} Call "securityActions->executeLogin()"
+Aug 31 20:40:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:40:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:40:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:40:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.geoip_addr AS j__geoip_addr FROM JtGeodata j - ()
+Aug 31 20:40:20 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO JtGeodata (id, geoip_addr, geoip_continent_code, geoip_country_code, geoip_country_name, geoip_city, geoip_region, geoip_region_name, geoip_dma_code, geoip_metro_code, geoip_area_code, geoip_latitude, geoip_longitude) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (, , , , , , , , , , , , )
+Aug 31 20:40:20 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/security/templates/loginSuccess.php"
+Aug 31 20:40:20 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Aug 31 20:40:20 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Aug 31 20:40:20 symfony [err] {RuntimeException} PHP sent a "notice" error at /var/jt-web/apps/front/templates/layout.php line 1 (Undefined variable: _SESSION)
+Aug 31 20:40:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:40:55 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:40:55 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:40:55 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:40:55 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:40:55 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:40:55 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:40:55 symfony [info] {sfPatternRouting} Match route "frontdoor" (/frontdoor) for /frontdoor with parameters array (  'module' => 'security',  'action' => 'login',)
+Aug 31 20:40:55 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:40:55 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:40:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 20:40:55 symfony [info] {securityActions} Call "securityActions->executeLogin()"
+Aug 31 20:40:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:40:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:40:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:40:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.geoip_addr AS j__geoip_addr FROM JtGeodata j - ()
+Aug 31 20:40:56 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/security/templates/loginSuccess.php"
+Aug 31 20:40:56 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Aug 31 20:40:56 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Aug 31 20:40:56 symfony [info] {sfWebResponse} Send content (4741 o)
+Aug 31 20:41:55 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:41:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 20:41:58 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:41:58 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:41:58 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 20:41:58 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:41:58 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 20:41:58 symfony [info] {sfPatternRouting} Match route "frontdoor" (/frontdoor) for /frontdoor with parameters array (  'module' => 'security',  'action' => 'login',)
+Aug 31 20:41:58 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 20:41:58 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 20:41:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 20:41:58 symfony [info] {securityActions} Call "securityActions->executeLogin()"
+Aug 31 20:41:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:41:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:41:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 20:41:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT j.id AS j__id, j.geoip_addr AS j__geoip_addr FROM JtGeodata j - ()
+Aug 31 20:41:58 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/security/templates/loginSuccess.php"
+Aug 31 20:41:58 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Aug 31 20:41:58 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Aug 31 20:41:58 symfony [info] {sfWebResponse} Send content (4741 o)

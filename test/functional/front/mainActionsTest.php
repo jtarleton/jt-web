@@ -5,15 +5,16 @@ include(dirname(__FILE__).'/../../bootstrap/functional.php');
 $browser = new sfTestFunctional(new sfBrowser());
 
 $browser->
-  get('/sun/index')->
+  get('/')->
 
   with('request')->begin()->
-    isParameter('module', 'sun')->
+    isParameter('module', 'main')->
     isParameter('action', 'index')->
   end()->
 
-  with('response')->begin()->
-    isStatusCode(200)->
-    checkElement('body', '!/This is a temporary page/')->
+  with('response')->begin()->followRedirect()
+    ->isRedirected()->
+    isStatusCode(302)->
+    //checkElement('body', '/Homepage/')->
   end()
 ;
