@@ -10,6 +10,9 @@
 homepage:
   url: /
   param: { module: main, action:index }
+geodata:
+  url: /geodata
+  param: { module: geodata, action: index }
 links:
   url: /links
   param: { module: main, action: links }

@@ -14,18 +14,18 @@ Doctrine_Manager::getInstance()->bindComponent('ChipotleOrders', 'doctrine');
  * @property string $choice_description
  * @property string $item_price
  * 
- * @method integer        getId()                 Returns the current record's "id" value
- * @method integer        getOrderId()            Returns the current record's "order_id" value
- * @method integer        getQuantity()           Returns the current record's "quantity" value
- * @method string         getItemName()           Returns the current record's "item_name" value
- * @method string         getChoiceDescription()  Returns the current record's "choice_description" value
- * @method string         getItemPrice()          Returns the current record's "item_price" value
- * @method ChipotleOrders setId()                 Sets the current record's "id" value
- * @method ChipotleOrders setOrderId()            Sets the current record's "order_id" value
- * @method ChipotleOrders setQuantity()           Sets the current record's "quantity" value
- * @method ChipotleOrders setItemName()           Sets the current record's "item_name" value
- * @method ChipotleOrders setChoiceDescription()  Sets the current record's "choice_description" value
- * @method ChipotleOrders setItemPrice()          Sets the current record's "item_price" value
+ * @method integer        get()                   Returns the current record's "id" value
+ * @method integer        get()                   Returns the current record's "order_id" value
+ * @method integer        get()                   Returns the current record's "quantity" value
+ * @method string         get()                   Returns the current record's "item_name" value
+ * @method string         get()                   Returns the current record's "choice_description" value
+ * @method string         get()                   Returns the current record's "item_price" value
+ * @method ChipotleOrders set()                   Sets the current record's "id" value
+ * @method ChipotleOrders set()                   Sets the current record's "order_id" value
+ * @method ChipotleOrders set()                   Sets the current record's "quantity" value
+ * @method ChipotleOrders set()                   Sets the current record's "item_name" value
+ * @method ChipotleOrders set()                   Sets the current record's "choice_description" value
+ * @method ChipotleOrders set()                   Sets the current record's "item_price" value
  * 
  * @package    jtweb
  * @subpackage model

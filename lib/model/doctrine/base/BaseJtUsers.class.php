@@ -12,26 +12,29 @@ Doctrine_Manager::getInstance()->bindComponent('JtUsers', 'doctrine');
  * @property string $username
  * @property string $password
  * @property string $email
+ * @property string $city_id
  * @property timestamp $last_login
  * @property timestamp $created
  * @property timestamp $last_updated
  * 
- * @method integer   getId()           Returns the current record's "id" value
- * @method string    getFbid()         Returns the current record's "fbid" value
- * @method string    getUsername()     Returns the current record's "username" value
- * @method string    getPassword()     Returns the current record's "password" value
- * @method string    getEmail()        Returns the current record's "email" value
- * @method timestamp getLastLogin()    Returns the current record's "last_login" value
- * @method timestamp getCreated()      Returns the current record's "created" value
- * @method timestamp getLastUpdated()  Returns the current record's "last_updated" value
- * @method JtUsers   setId()           Sets the current record's "id" value
- * @method JtUsers   setFbid()         Sets the current record's "fbid" value
- * @method JtUsers   setUsername()     Sets the current record's "username" value
- * @method JtUsers   setPassword()     Sets the current record's "password" value
- * @method JtUsers   setEmail()        Sets the current record's "email" value
- * @method JtUsers   setLastLogin()    Sets the current record's "last_login" value
- * @method JtUsers   setCreated()      Sets the current record's "created" value
- * @method JtUsers   setLastUpdated()  Sets the current record's "last_updated" value
+ * @method integer   get()             Returns the current record's "id" value
+ * @method string    get()             Returns the current record's "fbid" value
+ * @method string    get()             Returns the current record's "username" value
+ * @method string    get()             Returns the current record's "password" value
+ * @method string    get()             Returns the current record's "email" value
+ * @method string    get()             Returns the current record's "city_id" value
+ * @method timestamp get()             Returns the current record's "last_login" value
+ * @method timestamp get()             Returns the current record's "created" value
+ * @method timestamp get()             Returns the current record's "last_updated" value
+ * @method JtUsers   set()             Sets the current record's "id" value
+ * @method JtUsers   set()             Sets the current record's "fbid" value
+ * @method JtUsers   set()             Sets the current record's "username" value
+ * @method JtUsers   set()             Sets the current record's "password" value
+ * @method JtUsers   set()             Sets the current record's "email" value
+ * @method JtUsers   set()             Sets the current record's "city_id" value
+ * @method JtUsers   set()             Sets the current record's "last_login" value
+ * @method JtUsers   set()             Sets the current record's "created" value
+ * @method JtUsers   set()             Sets the current record's "last_updated" value
  * 
  * @package    jtweb
  * @subpackage model
@@ -79,6 +82,15 @@ abstract class BaseJtUsers extends sfDoctrineRecord
              'length' => 250,
              ));
         $this->hasColumn('email', 'string', 250, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 250,
+             ));
+        $this->hasColumn('city_id', 'string', 250, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,

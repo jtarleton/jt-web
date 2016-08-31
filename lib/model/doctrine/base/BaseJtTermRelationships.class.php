@@ -11,12 +11,12 @@ Doctrine_Manager::getInstance()->bindComponent('JtTermRelationships', 'doctrine'
  * @property integer $term_taxonomy_id
  * @property integer $term_order
  * 
- * @method integer             getObjectId()         Returns the current record's "object_id" value
- * @method integer             getTermTaxonomyId()   Returns the current record's "term_taxonomy_id" value
- * @method integer             getTermOrder()        Returns the current record's "term_order" value
- * @method JtTermRelationships setObjectId()         Sets the current record's "object_id" value
- * @method JtTermRelationships setTermTaxonomyId()   Sets the current record's "term_taxonomy_id" value
- * @method JtTermRelationships setTermOrder()        Sets the current record's "term_order" value
+ * @method integer             get()                 Returns the current record's "object_id" value
+ * @method integer             get()                 Returns the current record's "term_taxonomy_id" value
+ * @method integer             get()                 Returns the current record's "term_order" value
+ * @method JtTermRelationships set()                 Sets the current record's "object_id" value
+ * @method JtTermRelationships set()                 Sets the current record's "term_taxonomy_id" value
+ * @method JtTermRelationships set()                 Sets the current record's "term_order" value
  * 
  * @package    jtweb
  * @subpackage model

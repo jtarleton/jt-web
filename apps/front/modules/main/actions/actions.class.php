@@ -19,6 +19,13 @@ $this->setLayout('skinless');
 public function executeLinks(sfWebRequest $request) {
 
 }
+
+public function executeLinksbycat($request) {
+
+$this->linksByCat = JtLinksTable::getAllByCat($request->getParameter('cat'));
+
+
+}
 public function executePics(sfWebRequest $request) {
 $this->pics = array(
 

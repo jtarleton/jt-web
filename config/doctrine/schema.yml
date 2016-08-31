@@ -1,6 +1,49 @@
-AnnualReport:
+ChipotleOrders:
   connection: doctrine
-  tableName: AnnualReport
+  tableName: ChipotleOrders
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    order_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    quantity:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    item_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    choice_description:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    item_price:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+JtAnnualReport:
+  connection: doctrine
+  tableName: JtAnnualReport
   columns:
     id:
       type: integer(8)
@@ -93,52 +136,16 @@ AnnualReport:
       default: '0'
       notnull: true
       autoincrement: false
-ChipotleOrders:
+    summary:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+JtCity:
   connection: doctrine
-  tableName: ChipotleOrders
-  columns:
-    id:
-      type: integer(8)
-      autoincrement: true
-      primary: true
-    order_id:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    quantity:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    item_name:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    choice_description:
-      type: string(200)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    item_price:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-City:
-  connection: doctrine
-  tableName: City
+  tableName: JtCity
   columns:
     id:
       type: integer(4)
@@ -179,13 +186,13 @@ City:
       notnull: true
       autoincrement: false
   relations:
-    Country:
+    JtCountry:
       local: countrycode
       foreign: code
       type: one
-Country:
+JtCountry:
   connection: doctrine
-  tableName: Country
+  tableName: JtCountry
   columns:
     code:
       type: string(3)
@@ -308,17 +315,17 @@ Country:
       notnull: true
       autoincrement: false
   relations:
-    City:
+    JtCity:
       local: code
       foreign: countrycode
       type: many
-    CountryLanguage:
+    JtCountryLanguage:
       local: code
       foreign: countrycode
       type: many
-CountryLanguage:
+JtCountryLanguage:
   connection: doctrine
-  tableName: CountryLanguage
+  tableName: JtCountryLanguage
   columns:
     countrycode:
       type: string(3)
@@ -352,10 +359,143 @@ CountryLanguage:
       notnull: true
       autoincrement: false
   relations:
-    Country:
+    JtCountry:
       local: countrycode
       foreign: code
       type: one
+JtGeodata:
+  connection: doctrine
+  tableName: JtGeodata
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    geoip_addr:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    geoip_continent_code:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_country_code:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_country_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_city:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_region:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_region_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_dma_code:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_metro_code:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_area_code:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_latitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    geoip_longitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+JtLinks:
+  connection: doctrine
+  tableName: JtLinks
+  columns:
+    id:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    text:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    url:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    cat:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    public:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
 JtPosts:
   connection: doctrine
   tableName: JtPosts
@@ -703,6 +843,13 @@ JtUsers:
       primary: false
       notnull: true
       autoincrement: false
+    city_id:
+      type: string(250)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
     last_login:
       type: timestamp(25)
       fixed: false
@@ -724,4 +871,321 @@ JtUsers:
       primary: false
       default: '0000-00-00 00:00:00'
       notnull: true
+      autoincrement: false
+JtWhois:
+  connection: doctrine
+  tableName: JtWhois
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    cust_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    address:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    state_prov:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    postal_code:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    country:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    reg_date:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    url:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+JtZipcodes:
+  connection: doctrine
+  tableName: JtZipcodes
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    zip:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city:
+      type: string(250)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    state:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    latitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    longitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    timezone:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    dst:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+JtZipcodesExpanded:
+  connection: doctrine
+  tableName: JtZipcodesExpanded
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    zip:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city:
+      type: string(250)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    state:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    latitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    longitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    timezone:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    dst:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    name:
+      type: string(35)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: false
+      autoincrement: false
+    countrycode:
+      type: string(3)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: false
+      autoincrement: false
+    district:
+      type: string(20)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: false
+      autoincrement: false
+    population:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+JtZipcodesRevised:
+  connection: doctrine
+  tableName: JtZipcodesRevised
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    zip:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city:
+      type: string(250)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    state:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    latitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    longitude:
+      type: float()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    timezone:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    dst:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    name:
+      type: string(35)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: false
+      autoincrement: false
+    countrycode:
+      type: string(3)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: false
+      autoincrement: false
+    district:
+      type: string(20)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: false
+      autoincrement: false
+    population:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
       autoincrement: false

@@ -14,18 +14,18 @@ Doctrine_Manager::getInstance()->bindComponent('JtTermTaxonomy', 'doctrine');
  * @property integer $parent
  * @property integer $count
  * 
- * @method integer        getTermTaxonomyId()   Returns the current record's "term_taxonomy_id" value
- * @method integer        getTermId()           Returns the current record's "term_id" value
- * @method string         getTaxonomy()         Returns the current record's "taxonomy" value
- * @method string         getDescription()      Returns the current record's "description" value
- * @method integer        getParent()           Returns the current record's "parent" value
- * @method integer        getCount()            Returns the current record's "count" value
- * @method JtTermTaxonomy setTermTaxonomyId()   Sets the current record's "term_taxonomy_id" value
- * @method JtTermTaxonomy setTermId()           Sets the current record's "term_id" value
- * @method JtTermTaxonomy setTaxonomy()         Sets the current record's "taxonomy" value
- * @method JtTermTaxonomy setDescription()      Sets the current record's "description" value
- * @method JtTermTaxonomy setParent()           Sets the current record's "parent" value
- * @method JtTermTaxonomy setCount()            Sets the current record's "count" value
+ * @method integer        get()                 Returns the current record's "term_taxonomy_id" value
+ * @method integer        get()                 Returns the current record's "term_id" value
+ * @method string         get()                 Returns the current record's "taxonomy" value
+ * @method string         get()                 Returns the current record's "description" value
+ * @method integer        get()                 Returns the current record's "parent" value
+ * @method integer        get()                 Returns the current record's "count" value
+ * @method JtTermTaxonomy set()                 Sets the current record's "term_taxonomy_id" value
+ * @method JtTermTaxonomy set()                 Sets the current record's "term_id" value
+ * @method JtTermTaxonomy set()                 Sets the current record's "taxonomy" value
+ * @method JtTermTaxonomy set()                 Sets the current record's "description" value
+ * @method JtTermTaxonomy set()                 Sets the current record's "parent" value
+ * @method JtTermTaxonomy set()                 Sets the current record's "count" value
  * 
  * @package    jtweb
  * @subpackage model
