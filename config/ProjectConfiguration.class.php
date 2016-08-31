@@ -1,5 +1,5 @@
 <?php
-require('/var/jt-web/lib/UniversalClassLoader.php');
+require( dirname(__FILE__) . '/../lib/UniversalClassLoader.php');
 require_once dirname(__FILE__).'/../lib/autoload/sfCoreAutoload.class.php';
 sfCoreAutoload::register();
 
