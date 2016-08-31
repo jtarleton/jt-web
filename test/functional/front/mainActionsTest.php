@@ -12,8 +12,7 @@ $browser->
     isParameter('action', 'index')->
   end()->
 
-  with('response')->begin()->followRedirect()
-    ->isRedirected()->
+  with('response')->begin()->
     isStatusCode(302)->
     //checkElement('body', '/Homepage/')->
   end()
