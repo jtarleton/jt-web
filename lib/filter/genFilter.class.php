@@ -54,7 +54,7 @@ class genFilter extends sfFilter
 
     	if( ! $usr->isAuthenticated() )
     	{
-        	if( $module != 'security'  )
+        	if( !in_array($module, array('security', 'sun', 'weather') )  )
         	{
 	        	// If module is 'ajax', we have a special stop point
 

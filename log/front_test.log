@@ -217,3 +217,10 @@ Aug 31 20:53:03 symfony [info] {sfFilterChain} Executing filter "genFilter"
 Aug 31 20:53:03 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
 Aug 31 20:53:03 symfony [info] {sfWebResponse} Send content (107 o)
 Aug 31 20:53:03 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 21:03:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 21:03:31 symfony [info] {sfPatternRouting} Match route "homepage2" (/index) for /index with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 31 21:03:31 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Aug 31 21:03:31 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Aug 31 21:03:31 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Aug 31 21:03:31 symfony [info] {sfWebResponse} Send content (107 o)
+Aug 31 21:03:31 symfony [info] {sfWebResponse} Send content (107 o)

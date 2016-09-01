@@ -82,7 +82,12 @@ jQuery(document).ready(function() {
 
 
 		<ul class="toplinks_links">
-
+<li>
+<a href="https://www.jamestarleton.com/sun/index">Sun</a>
+</li>
+<li>
+<a href="https://www.jamestarleton.com/weather/index">Weather</a>
+</li>
 <?php if(sfContext::getInstance()->getUser()->isAuthenticated() ): ?>
 		<li>
 <a href="https://www.jamestarleton.com/musicvideos">Music</a>
