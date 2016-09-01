@@ -224,3 +224,23 @@ Aug 31 21:03:31 symfony [info] {sfFilterChain} Executing filter "genFilter"
 Aug 31 21:03:31 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
 Aug 31 21:03:31 symfony [info] {sfWebResponse} Send content (107 o)
 Aug 31 21:03:31 symfony [info] {sfWebResponse} Send content (107 o)
+Sep 01 17:24:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 01 17:24:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /weather/index with parameters array (  'module' => 'weather',  'action' => 'index',)
+Sep 01 17:24:40 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Sep 01 17:24:40 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Sep 01 17:24:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 01 17:24:40 symfony [info] {weatherActions} Call "weatherActions->executeIndex()"
+Sep 01 17:24:43 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/weather/templates/indexSuccess.php"
+Sep 01 17:24:43 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Sep 01 17:24:43 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Sep 01 17:24:43 symfony [info] {sfWebResponse} Send content (4706 o)
+Sep 01 17:26:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 01 17:26:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /weather/index with parameters array (  'module' => 'weather',  'action' => 'index',)
+Sep 01 17:26:43 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Sep 01 17:26:43 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Sep 01 17:26:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 01 17:26:43 symfony [info] {weatherActions} Call "weatherActions->executeIndex()"
+Sep 01 17:26:43 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/weather/templates/indexSuccess.php"
+Sep 01 17:26:43 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Sep 01 17:26:43 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Sep 01 17:26:43 symfony [info] {sfWebResponse} Send content (4706 o)
