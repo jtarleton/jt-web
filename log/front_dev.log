@@ -18639,3 +18639,41 @@ Sep 10 06:27:29 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_list_batch_
 Sep 10 06:27:29 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_list_actions" 0.46 ms (1)
 Sep 10 06:27:29 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_list_footer" 0.30 ms (1)
 Sep 10 06:27:29 symfony [info] {sfWebResponse} Send content (30493 o)
+Sep 10 06:33:39 symfony [info] {sfPatternRouting} Match route "jt_posts_edit" (/jt_posts/:id/edit.:sf_format) for /jt_posts/81/edit with parameters array (  'module' => 'jt_posts',  'action' => 'edit',  'sf_format' => 'html',  'id' => '81',)
+Sep 10 06:33:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 10 06:33:39 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Sep 10 06:33:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 06:33:39 symfony [info] {jt_postsActions} Call "jt_postsActions->executeEdit()"
+Sep 10 06:33:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 10 06:33:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT j.id AS j__id, j.post_author AS j__post_author, j.post_date AS j__post_date, j.post_date_gmt AS j__post_date_gmt, j.post_content AS j__post_content, j.post_title AS j__post_title, j.post_excerpt AS j__post_excerpt, j.post_status AS j__post_status, j.comment_status AS j__comment_status, j.ping_status AS j__ping_status, j.post_password AS j__post_password, j.post_name AS j__post_name, j.to_ping AS j__to_ping, j.pinged AS j__pinged, j.post_modified AS j__post_modified, j.post_modified_gmt AS j__post_modified_gmt, j.post_content_filtered AS j__post_content_filtered, j.post_parent AS j__post_parent, j.guid AS j__guid, j.menu_order AS j__menu_order, j.post_type AS j__post_type, j.post_mime_type AS j__post_mime_type, j.comment_count AS j__comment_count FROM JtPosts j WHERE (j.id = ?) - (81)
+Sep 10 06:33:39 symfony [info] {sfPHPView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/editSuccess.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_assets.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_flashes.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form_header.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form_fieldset.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form_field.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form_field.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form_field.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form_field.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form_field.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form_actions.php"
+Sep 10 06:33:40 symfony [info] {sfPartialView} Render "/var/jt-web/cache/front/dev/modules/autoJt_posts/templates/_form_footer.php"
+Sep 10 06:33:40 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout-admin.php"
+Sep 10 06:33:40 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout-admin.php"
+Sep 10 06:33:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 10 06:33:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Configuration 779.04 ms (11)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Factories 207.66 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Action "jt_posts/edit" 107.37 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 8.63 ms (2)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} View "Success" for "jt_posts/edit" 59.83 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_assets" 0.53 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_flashes" 0.56 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_form_header" 0.52 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_form" 23.74 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_form_fieldset" 16.79 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_form_field" 14.51 ms (5)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_form_actions" 2.11 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebDebugLogger} Partial "jt_posts/_form_footer" 0.52 ms (1)
+Sep 10 06:33:40 symfony [info] {sfWebResponse} Send content (18222 o)
