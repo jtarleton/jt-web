@@ -9,7 +9,7 @@ $browser->
 
   with('request')->begin()->
     isParameter('module', 'jt_term_taxonomy')->
-    isParameter('action', 'index')->
+    isParameter('action', 'show')->
   end();
 //  with('response')->begin()->
   //end()

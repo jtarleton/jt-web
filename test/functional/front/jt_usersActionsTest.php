@@ -9,7 +9,7 @@ $browser->
 
   with('request')->begin()->
     isParameter('module', 'jt_users')->
-    isParameter('action', 'show')->
+    isParameter('action', 'index')->
   end();
 //  with('response')->begin()->
   //end()
