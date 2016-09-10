@@ -11,5 +11,3 @@ $browser->
     isParameter('module', 'jt_sessions')->
     isParameter('action', 'index')->
   end();
-//  with('response')->begin()->
-  //end()

@@ -380,3 +380,53 @@ Sep 10 10:51:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for
 Sep 10 10:51:42 symfony [info] {sfPatternRouting} Match route "jt_term_taxonomy_show" (/jt_term_taxonomy/:term_taxonomy_id.:sf_format) for /jt_term_taxonomy/index with parameters array (  'module' => 'jt_term_taxonomy',  'action' => 'show',  'sf_format' => 'html',  'term_taxonomy_id' => 'index',)
 Sep 10 10:51:42 symfony [info] {sfFrontWebController} Action "jt_term_taxonomy/show" does not exist
 Sep 10 10:51:42 symfony [err] {sfError404Exception} Action "jt_term_taxonomy/show" does not exist.
+Sep 10 10:54:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 10 10:54:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /jt_posts/index with parameters array (  'module' => 'jt_posts',  'action' => 'index',)
+Sep 10 10:54:41 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Sep 10 10:54:41 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Sep 10 10:54:41 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Sep 10 10:54:41 symfony [info] {sfWebResponse} Send content (107 o)
+Sep 10 10:54:41 symfony [info] {sfWebResponse} Send content (107 o)
+Sep 10 10:54:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 10 10:54:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /jt_sessions/index with parameters array (  'module' => 'jt_sessions',  'action' => 'index',)
+Sep 10 10:54:42 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Sep 10 10:54:42 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Sep 10 10:54:42 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Sep 10 10:54:42 symfony [info] {sfWebResponse} Send content (107 o)
+Sep 10 10:54:42 symfony [info] {sfWebResponse} Send content (107 o)
+Sep 10 10:54:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 10 10:54:43 symfony [info] {sfPatternRouting} Match route "jt_term_relationships_show" (/jt_term_relationships/:Array.:sf_format) for /jt_term_relationships/index with parameters array (  'module' => 'jt_term_relationships',  'action' => 'show',  'sf_format' => 'html',  'Array' => 'index',)
+Sep 10 10:54:43 symfony [info] {sfFrontWebController} Action "jt_term_relationships/show" does not exist
+Sep 10 10:54:43 symfony [err] {sfError404Exception} Action "jt_term_relationships/show" does not exist.
+Sep 10 10:54:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 10 10:54:43 symfony [info] {sfPatternRouting} Match route "jt_term_taxonomy_show" (/jt_term_taxonomy/:term_taxonomy_id.:sf_format) for /jt_term_taxonomy/index with parameters array (  'module' => 'jt_term_taxonomy',  'action' => 'show',  'sf_format' => 'html',  'term_taxonomy_id' => 'index',)
+Sep 10 10:54:44 symfony [info] {sfFrontWebController} Action "jt_term_taxonomy/show" does not exist
+Sep 10 10:54:44 symfony [err] {sfError404Exception} Action "jt_term_taxonomy/show" does not exist.
+Sep 10 10:54:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 10 10:54:44 symfony [info] {sfPatternRouting} Match route "jt_terms_show" (/jt_terms/:term_id.:sf_format) for /jt_terms/index with parameters array (  'module' => 'jt_terms',  'action' => 'show',  'sf_format' => 'html',  'term_id' => 'index',)
+Sep 10 10:54:44 symfony [info] {sfFrontWebController} Action "jt_terms/show" does not exist
+Sep 10 10:54:44 symfony [err] {sfError404Exception} Action "jt_terms/show" does not exist.
+Sep 10 10:54:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 10 10:54:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /jt_users/index with parameters array (  'module' => 'jt_users',  'action' => 'index',)
+Sep 10 10:54:45 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Sep 10 10:54:45 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Sep 10 10:54:45 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Sep 10 10:54:45 symfony [info] {sfWebResponse} Send content (107 o)
+Sep 10 10:54:45 symfony [info] {sfWebResponse} Send content (107 o)
+Sep 10 10:54:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 10 10:54:46 symfony [info] {sfPatternRouting} Match route "homepage2" (/index) for /index with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 10 10:54:46 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Sep 10 10:54:46 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Sep 10 10:54:46 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Sep 10 10:54:46 symfony [info] {sfWebResponse} Send content (107 o)
+Sep 10 10:54:46 symfony [info] {sfWebResponse} Send content (107 o)
+Sep 10 10:54:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Sep 10 10:54:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /weather/index with parameters array (  'module' => 'weather',  'action' => 'index',)
+Sep 10 10:54:46 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Sep 10 10:54:46 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Sep 10 10:54:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 10 10:54:46 symfony [info] {weatherActions} Call "weatherActions->executeIndex()"
+Sep 10 10:54:49 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/modules/weather/templates/indexSuccess.php"
+Sep 10 10:54:49 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
+Sep 10 10:54:49 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
+Sep 10 10:54:49 symfony [info] {sfWebResponse} Send content (4786 o)
