@@ -12,6 +12,6 @@ $browser->
     isParameter('action', 'show')->
   end()->
 
-  with('response')->begin()->
-  end()
+//  with('response')->begin()->
+  //end()
 ;

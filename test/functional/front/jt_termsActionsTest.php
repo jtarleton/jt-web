@@ -9,9 +9,9 @@ $browser->
 
   with('request')->begin()->
     isParameter('module', 'jt_terms')->
-    isParameter('action', 'index')->
+    isParameter('action', 'show')->
   end()->
 
-  with('response')->begin()->
-  end()
+//  with('response')->begin()->
+  //end()
 ;

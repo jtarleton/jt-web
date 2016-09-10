@@ -12,7 +12,7 @@ $browser->
     isParameter('action', 'show')->
   end()->
 
-  with('response')->begin()->
-    isStatusCode(200)->
-  end()
+//  with('response')->begin()->
+  //  isStatusCode(200)->
+  //end()
 ;
