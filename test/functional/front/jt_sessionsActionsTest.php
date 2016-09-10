@@ -9,11 +9,9 @@ $browser->
 
   with('request')->begin()->
     isParameter('module', 'jt_sessions')->
-    isParameter('action', 'index')->
+    isParameter('action', 'show')->
   end()->
 
   with('response')->begin()->
-    isStatusCode(200)->
-    checkElement('body', '!/This is a temporary page/')->
   end()
 ;

@@ -10,26 +10,22 @@ generator:
     route_prefix:          jt_posts
     with_doctrine_route:   true
     actions_base_class:    sfActions
-    fields:
-      post_title:    {  }
-      post_date : { }
-      post_content : { }
-    config:
+    config:  
+      actions: ~
+      fields:
+        post_title:    {  }
+        post_date : { }
+        post_content : { }
       list:
         title:          Posts
-        display: [=post_title, post_date]
+        display: [post_status, =post_title, post_date]
         max_per_page:   10
         sort:           [post_date, desc]
       edit:
         display: [post_title, post_date, post_content, post_author, post_status]
-      new:
+      filter:
+        display : [ post_status, post_date ]
+      form:
         display: [post_title, post_content]
-    filter:
-      display : [ post_title, post_content, post_date ]
-      class: false
-    form:
-      display:
-        Content: [post_title, post_content]
-        Admin:   [post_title, post_status]
-    edit:    [ post_title, post_content, post_date ]
-    new:     [ post_title, post_content, post_date ]
+      new:     
+        display: [ post_title, post_content, post_date ]
