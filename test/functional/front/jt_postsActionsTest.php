@@ -10,8 +10,6 @@ $browser->
   with('request')->begin()->
     isParameter('module', 'jt_posts')->
     isParameter('action', 'show')->
-  end()->
-
+  end();
 //  with('response')->begin()->
   //end()
-;

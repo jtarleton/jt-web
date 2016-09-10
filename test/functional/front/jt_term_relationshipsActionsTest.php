@@ -10,9 +10,7 @@ $browser->
   with('request')->begin()->
     isParameter('module', 'jt_term_relationships')->
     isParameter('action', 'show')->
-  end()->
-
+  end();
 //  with('response')->begin()->
   //  isStatusCode(200)->
   //end()
-;
