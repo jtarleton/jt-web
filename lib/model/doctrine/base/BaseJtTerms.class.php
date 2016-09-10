@@ -12,14 +12,14 @@ Doctrine_Manager::getInstance()->bindComponent('JtTerms', 'doctrine');
  * @property string $slug
  * @property integer $term_group
  * 
- * @method integer get()           Returns the current record's "term_id" value
- * @method string  get()           Returns the current record's "name" value
- * @method string  get()           Returns the current record's "slug" value
- * @method integer get()           Returns the current record's "term_group" value
- * @method JtTerms set()           Sets the current record's "term_id" value
- * @method JtTerms set()           Sets the current record's "name" value
- * @method JtTerms set()           Sets the current record's "slug" value
- * @method JtTerms set()           Sets the current record's "term_group" value
+ * @method integer getterm_id()    Returns the current record's "term_id" value
+ * @method string  getname()       Returns the current record's "name" value
+ * @method string  getslug()       Returns the current record's "slug" value
+ * @method integer getterm_group() Returns the current record's "term_group" value
+ * @method JtTerms setterm_id()    Sets the current record's "term_id" value
+ * @method JtTerms setname()       Sets the current record's "name" value
+ * @method JtTerms setslug()       Sets the current record's "slug" value
+ * @method JtTerms setterm_group() Sets the current record's "term_group" value
  * 
  * @package    jtweb
  * @subpackage model

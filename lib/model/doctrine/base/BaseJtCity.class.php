@@ -14,18 +14,18 @@ Doctrine_Manager::getInstance()->bindComponent('JtCity', 'doctrine');
  * @property integer $population
  * @property JtCountry $JtCountry
  * 
- * @method integer   get()            Returns the current record's "id" value
- * @method string    get()            Returns the current record's "name" value
- * @method string    get()            Returns the current record's "countrycode" value
- * @method string    get()            Returns the current record's "district" value
- * @method integer   get()            Returns the current record's "population" value
- * @method JtCountry get()            Returns the current record's "JtCountry" value
- * @method JtCity    set()            Sets the current record's "id" value
- * @method JtCity    set()            Sets the current record's "name" value
- * @method JtCity    set()            Sets the current record's "countrycode" value
- * @method JtCity    set()            Sets the current record's "district" value
- * @method JtCity    set()            Sets the current record's "population" value
- * @method JtCity    set()            Sets the current record's "JtCountry" value
+ * @method integer   getid()          Returns the current record's "id" value
+ * @method string    getname()        Returns the current record's "name" value
+ * @method string    getcountrycode() Returns the current record's "countrycode" value
+ * @method string    getdistrict()    Returns the current record's "district" value
+ * @method integer   getpopulation()  Returns the current record's "population" value
+ * @method JtCountry getJtCountry()   Returns the current record's "JtCountry" value
+ * @method JtCity    setid()          Sets the current record's "id" value
+ * @method JtCity    setname()        Sets the current record's "name" value
+ * @method JtCity    setcountrycode() Sets the current record's "countrycode" value
+ * @method JtCity    setdistrict()    Sets the current record's "district" value
+ * @method JtCity    setpopulation()  Sets the current record's "population" value
+ * @method JtCity    setJtCountry()   Sets the current record's "JtCountry" value
  * 
  * @package    jtweb
  * @subpackage model

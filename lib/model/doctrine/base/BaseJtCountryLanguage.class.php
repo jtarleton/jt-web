@@ -13,16 +13,16 @@ Doctrine_Manager::getInstance()->bindComponent('JtCountryLanguage', 'doctrine');
  * @property float $percentage
  * @property JtCountry $JtCountry
  * 
- * @method string            get()            Returns the current record's "countrycode" value
- * @method string            get()            Returns the current record's "language" value
- * @method enum              get()            Returns the current record's "isofficial" value
- * @method float             get()            Returns the current record's "percentage" value
- * @method JtCountry         get()            Returns the current record's "JtCountry" value
- * @method JtCountryLanguage set()            Sets the current record's "countrycode" value
- * @method JtCountryLanguage set()            Sets the current record's "language" value
- * @method JtCountryLanguage set()            Sets the current record's "isofficial" value
- * @method JtCountryLanguage set()            Sets the current record's "percentage" value
- * @method JtCountryLanguage set()            Sets the current record's "JtCountry" value
+ * @method string            getcountrycode() Returns the current record's "countrycode" value
+ * @method string            getlanguage()    Returns the current record's "language" value
+ * @method enum              getisofficial()  Returns the current record's "isofficial" value
+ * @method float             getpercentage()  Returns the current record's "percentage" value
+ * @method JtCountry         getJtCountry()   Returns the current record's "JtCountry" value
+ * @method JtCountryLanguage setcountrycode() Sets the current record's "countrycode" value
+ * @method JtCountryLanguage setlanguage()    Sets the current record's "language" value
+ * @method JtCountryLanguage setisofficial()  Sets the current record's "isofficial" value
+ * @method JtCountryLanguage setpercentage()  Sets the current record's "percentage" value
+ * @method JtCountryLanguage setJtCountry()   Sets the current record's "JtCountry" value
  * 
  * @package    jtweb
  * @subpackage model

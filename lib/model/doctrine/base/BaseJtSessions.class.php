@@ -11,12 +11,12 @@ Doctrine_Manager::getInstance()->bindComponent('JtSessions', 'doctrine');
  * @property string $session_id
  * @property string $ip
  * 
- * @method integer    get()           Returns the current record's "id" value
- * @method string     get()           Returns the current record's "session_id" value
- * @method string     get()           Returns the current record's "ip" value
- * @method JtSessions set()           Sets the current record's "id" value
- * @method JtSessions set()           Sets the current record's "session_id" value
- * @method JtSessions set()           Sets the current record's "ip" value
+ * @method integer    getid()         Returns the current record's "id" value
+ * @method string     getsession_id() Returns the current record's "session_id" value
+ * @method string     getip()         Returns the current record's "ip" value
+ * @method JtSessions setid()         Sets the current record's "id" value
+ * @method JtSessions setsession_id() Sets the current record's "session_id" value
+ * @method JtSessions setip()         Sets the current record's "ip" value
  * 
  * @package    jtweb
  * @subpackage model

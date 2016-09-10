@@ -20,33 +20,36 @@ Doctrine_Manager::getInstance()->bindComponent('JtGeodata', 'doctrine');
  * @property string $geoip_area_code
  * @property float $geoip_latitude
  * @property float $geoip_longitude
+ * @property timestamp $created
  * 
- * @method integer   get()                     Returns the current record's "id" value
- * @method string    get()                     Returns the current record's "geoip_addr" value
- * @method string    get()                     Returns the current record's "geoip_continent_code" value
- * @method string    get()                     Returns the current record's "geoip_country_code" value
- * @method string    get()                     Returns the current record's "geoip_country_name" value
- * @method string    get()                     Returns the current record's "geoip_city" value
- * @method string    get()                     Returns the current record's "geoip_region" value
- * @method string    get()                     Returns the current record's "geoip_region_name" value
- * @method string    get()                     Returns the current record's "geoip_dma_code" value
- * @method string    get()                     Returns the current record's "geoip_metro_code" value
- * @method string    get()                     Returns the current record's "geoip_area_code" value
- * @method float     get()                     Returns the current record's "geoip_latitude" value
- * @method float     get()                     Returns the current record's "geoip_longitude" value
- * @method JtGeodata set()                     Sets the current record's "id" value
- * @method JtGeodata set()                     Sets the current record's "geoip_addr" value
- * @method JtGeodata set()                     Sets the current record's "geoip_continent_code" value
- * @method JtGeodata set()                     Sets the current record's "geoip_country_code" value
- * @method JtGeodata set()                     Sets the current record's "geoip_country_name" value
- * @method JtGeodata set()                     Sets the current record's "geoip_city" value
- * @method JtGeodata set()                     Sets the current record's "geoip_region" value
- * @method JtGeodata set()                     Sets the current record's "geoip_region_name" value
- * @method JtGeodata set()                     Sets the current record's "geoip_dma_code" value
- * @method JtGeodata set()                     Sets the current record's "geoip_metro_code" value
- * @method JtGeodata set()                     Sets the current record's "geoip_area_code" value
- * @method JtGeodata set()                     Sets the current record's "geoip_latitude" value
- * @method JtGeodata set()                     Sets the current record's "geoip_longitude" value
+ * @method integer   getid()                   Returns the current record's "id" value
+ * @method string    getgeoip_addr()           Returns the current record's "geoip_addr" value
+ * @method string    getgeoip_continent_code() Returns the current record's "geoip_continent_code" value
+ * @method string    getgeoip_country_code()   Returns the current record's "geoip_country_code" value
+ * @method string    getgeoip_country_name()   Returns the current record's "geoip_country_name" value
+ * @method string    getgeoip_city()           Returns the current record's "geoip_city" value
+ * @method string    getgeoip_region()         Returns the current record's "geoip_region" value
+ * @method string    getgeoip_region_name()    Returns the current record's "geoip_region_name" value
+ * @method string    getgeoip_dma_code()       Returns the current record's "geoip_dma_code" value
+ * @method string    getgeoip_metro_code()     Returns the current record's "geoip_metro_code" value
+ * @method string    getgeoip_area_code()      Returns the current record's "geoip_area_code" value
+ * @method float     getgeoip_latitude()       Returns the current record's "geoip_latitude" value
+ * @method float     getgeoip_longitude()      Returns the current record's "geoip_longitude" value
+ * @method timestamp getcreated()              Returns the current record's "created" value
+ * @method JtGeodata setid()                   Sets the current record's "id" value
+ * @method JtGeodata setgeoip_addr()           Sets the current record's "geoip_addr" value
+ * @method JtGeodata setgeoip_continent_code() Sets the current record's "geoip_continent_code" value
+ * @method JtGeodata setgeoip_country_code()   Sets the current record's "geoip_country_code" value
+ * @method JtGeodata setgeoip_country_name()   Sets the current record's "geoip_country_name" value
+ * @method JtGeodata setgeoip_city()           Sets the current record's "geoip_city" value
+ * @method JtGeodata setgeoip_region()         Sets the current record's "geoip_region" value
+ * @method JtGeodata setgeoip_region_name()    Sets the current record's "geoip_region_name" value
+ * @method JtGeodata setgeoip_dma_code()       Sets the current record's "geoip_dma_code" value
+ * @method JtGeodata setgeoip_metro_code()     Sets the current record's "geoip_metro_code" value
+ * @method JtGeodata setgeoip_area_code()      Sets the current record's "geoip_area_code" value
+ * @method JtGeodata setgeoip_latitude()       Sets the current record's "geoip_latitude" value
+ * @method JtGeodata setgeoip_longitude()      Sets the current record's "geoip_longitude" value
+ * @method JtGeodata setcreated()              Sets the current record's "created" value
  * 
  * @package    jtweb
  * @subpackage model
@@ -71,7 +74,7 @@ abstract class BaseJtGeodata extends sfDoctrineRecord
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
-             'notnull' => true,
+             'notnull' => false,
              'autoincrement' => false,
              'length' => 200,
              ));
@@ -173,6 +176,16 @@ abstract class BaseJtGeodata extends sfDoctrineRecord
              'notnull' => false,
              'autoincrement' => false,
              'length' => '',
+             ));
+        $this->hasColumn('created', 'timestamp', 25, array(
+             'type' => 'timestamp',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'default' => '0000-00-00 00:00:00',
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 25,
              ));
     }
 

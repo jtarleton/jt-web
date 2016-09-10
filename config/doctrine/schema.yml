@@ -378,7 +378,7 @@ JtGeodata:
       fixed: false
       unsigned: false
       primary: false
-      notnull: true
+      notnull: false
       autoincrement: false
     geoip_continent_code:
       type: string(200)
@@ -456,6 +456,14 @@ JtGeodata:
       unsigned: false
       primary: false
       notnull: false
+      autoincrement: false
+    created:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
       autoincrement: false
 JtLinks:
   connection: doctrine
@@ -674,6 +682,37 @@ JtPosts:
       unsigned: false
       primary: false
       default: '0'
+      notnull: true
+      autoincrement: false
+JtQuotes:
+  connection: doctrine
+  tableName: JtQuotes
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    source:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    link:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
       notnull: true
       autoincrement: false
 JtSessions:

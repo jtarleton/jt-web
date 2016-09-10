@@ -484,7 +484,7 @@ class sfDateFormat
       case 'MMM':
         return $this->formatInfo->AbbreviatedMonthNames[$month - 1];
       case 'MMMM':
-        return $this->formatInfo->MonthNames[$month - 1];
+        return @$this->formatInfo->MonthNames[$month - 1];
       case 'MMMMM':
         return $this->formatInfo->NarrowMonthNames[$month - 1];
       default:

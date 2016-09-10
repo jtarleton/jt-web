@@ -13,16 +13,16 @@ Doctrine_Manager::getInstance()->bindComponent('JtLinks', 'doctrine');
  * @property string $cat
  * @property string $public
  * 
- * @method string  get()       Returns the current record's "id" value
- * @method string  get()       Returns the current record's "text" value
- * @method string  get()       Returns the current record's "url" value
- * @method string  get()       Returns the current record's "cat" value
- * @method string  get()       Returns the current record's "public" value
- * @method JtLinks set()       Sets the current record's "id" value
- * @method JtLinks set()       Sets the current record's "text" value
- * @method JtLinks set()       Sets the current record's "url" value
- * @method JtLinks set()       Sets the current record's "cat" value
- * @method JtLinks set()       Sets the current record's "public" value
+ * @method string  getid()     Returns the current record's "id" value
+ * @method string  gettext()   Returns the current record's "text" value
+ * @method string  geturl()    Returns the current record's "url" value
+ * @method string  getcat()    Returns the current record's "cat" value
+ * @method string  getpublic() Returns the current record's "public" value
+ * @method JtLinks setid()     Sets the current record's "id" value
+ * @method JtLinks settext()   Sets the current record's "text" value
+ * @method JtLinks seturl()    Sets the current record's "url" value
+ * @method JtLinks setcat()    Sets the current record's "cat" value
+ * @method JtLinks setpublic() Sets the current record's "public" value
  * 
  * @package    jtweb
  * @subpackage model

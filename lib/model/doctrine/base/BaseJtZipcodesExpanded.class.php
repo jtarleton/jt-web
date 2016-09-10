@@ -20,30 +20,30 @@ Doctrine_Manager::getInstance()->bindComponent('JtZipcodesExpanded', 'doctrine')
  * @property string $district
  * @property integer $population
  * 
- * @method integer            get()            Returns the current record's "id" value
- * @method string             get()            Returns the current record's "zip" value
- * @method string             get()            Returns the current record's "city" value
- * @method string             get()            Returns the current record's "state" value
- * @method float              get()            Returns the current record's "latitude" value
- * @method float              get()            Returns the current record's "longitude" value
- * @method integer            get()            Returns the current record's "timezone" value
- * @method integer            get()            Returns the current record's "dst" value
- * @method string             get()            Returns the current record's "name" value
- * @method string             get()            Returns the current record's "countrycode" value
- * @method string             get()            Returns the current record's "district" value
- * @method integer            get()            Returns the current record's "population" value
- * @method JtZipcodesExpanded set()            Sets the current record's "id" value
- * @method JtZipcodesExpanded set()            Sets the current record's "zip" value
- * @method JtZipcodesExpanded set()            Sets the current record's "city" value
- * @method JtZipcodesExpanded set()            Sets the current record's "state" value
- * @method JtZipcodesExpanded set()            Sets the current record's "latitude" value
- * @method JtZipcodesExpanded set()            Sets the current record's "longitude" value
- * @method JtZipcodesExpanded set()            Sets the current record's "timezone" value
- * @method JtZipcodesExpanded set()            Sets the current record's "dst" value
- * @method JtZipcodesExpanded set()            Sets the current record's "name" value
- * @method JtZipcodesExpanded set()            Sets the current record's "countrycode" value
- * @method JtZipcodesExpanded set()            Sets the current record's "district" value
- * @method JtZipcodesExpanded set()            Sets the current record's "population" value
+ * @method integer            getid()          Returns the current record's "id" value
+ * @method string             getzip()         Returns the current record's "zip" value
+ * @method string             getcity()        Returns the current record's "city" value
+ * @method string             getstate()       Returns the current record's "state" value
+ * @method float              getlatitude()    Returns the current record's "latitude" value
+ * @method float              getlongitude()   Returns the current record's "longitude" value
+ * @method integer            gettimezone()    Returns the current record's "timezone" value
+ * @method integer            getdst()         Returns the current record's "dst" value
+ * @method string             getname()        Returns the current record's "name" value
+ * @method string             getcountrycode() Returns the current record's "countrycode" value
+ * @method string             getdistrict()    Returns the current record's "district" value
+ * @method integer            getpopulation()  Returns the current record's "population" value
+ * @method JtZipcodesExpanded setid()          Sets the current record's "id" value
+ * @method JtZipcodesExpanded setzip()         Sets the current record's "zip" value
+ * @method JtZipcodesExpanded setcity()        Sets the current record's "city" value
+ * @method JtZipcodesExpanded setstate()       Sets the current record's "state" value
+ * @method JtZipcodesExpanded setlatitude()    Sets the current record's "latitude" value
+ * @method JtZipcodesExpanded setlongitude()   Sets the current record's "longitude" value
+ * @method JtZipcodesExpanded settimezone()    Sets the current record's "timezone" value
+ * @method JtZipcodesExpanded setdst()         Sets the current record's "dst" value
+ * @method JtZipcodesExpanded setname()        Sets the current record's "name" value
+ * @method JtZipcodesExpanded setcountrycode() Sets the current record's "countrycode" value
+ * @method JtZipcodesExpanded setdistrict()    Sets the current record's "district" value
+ * @method JtZipcodesExpanded setpopulation()  Sets the current record's "population" value
  * 
  * @package    jtweb
  * @subpackage model

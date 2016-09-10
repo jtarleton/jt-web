@@ -18,26 +18,26 @@ Doctrine_Manager::getInstance()->bindComponent('JtWhois', 'doctrine');
  * @property date $updated
  * @property string $url
  * 
- * @method integer get()            Returns the current record's "id" value
- * @method string  get()            Returns the current record's "cust_name" value
- * @method string  get()            Returns the current record's "address" value
- * @method string  get()            Returns the current record's "city" value
- * @method string  get()            Returns the current record's "state_prov" value
- * @method string  get()            Returns the current record's "postal_code" value
- * @method string  get()            Returns the current record's "country" value
- * @method date    get()            Returns the current record's "reg_date" value
- * @method date    get()            Returns the current record's "updated" value
- * @method string  get()            Returns the current record's "url" value
- * @method JtWhois set()            Sets the current record's "id" value
- * @method JtWhois set()            Sets the current record's "cust_name" value
- * @method JtWhois set()            Sets the current record's "address" value
- * @method JtWhois set()            Sets the current record's "city" value
- * @method JtWhois set()            Sets the current record's "state_prov" value
- * @method JtWhois set()            Sets the current record's "postal_code" value
- * @method JtWhois set()            Sets the current record's "country" value
- * @method JtWhois set()            Sets the current record's "reg_date" value
- * @method JtWhois set()            Sets the current record's "updated" value
- * @method JtWhois set()            Sets the current record's "url" value
+ * @method integer getid()          Returns the current record's "id" value
+ * @method string  getcust_name()   Returns the current record's "cust_name" value
+ * @method string  getaddress()     Returns the current record's "address" value
+ * @method string  getcity()        Returns the current record's "city" value
+ * @method string  getstate_prov()  Returns the current record's "state_prov" value
+ * @method string  getpostal_code() Returns the current record's "postal_code" value
+ * @method string  getcountry()     Returns the current record's "country" value
+ * @method date    getreg_date()    Returns the current record's "reg_date" value
+ * @method date    getupdated()     Returns the current record's "updated" value
+ * @method string  geturl()         Returns the current record's "url" value
+ * @method JtWhois setid()          Sets the current record's "id" value
+ * @method JtWhois setcust_name()   Sets the current record's "cust_name" value
+ * @method JtWhois setaddress()     Sets the current record's "address" value
+ * @method JtWhois setcity()        Sets the current record's "city" value
+ * @method JtWhois setstate_prov()  Sets the current record's "state_prov" value
+ * @method JtWhois setpostal_code() Sets the current record's "postal_code" value
+ * @method JtWhois setcountry()     Sets the current record's "country" value
+ * @method JtWhois setreg_date()    Sets the current record's "reg_date" value
+ * @method JtWhois setupdated()     Sets the current record's "updated" value
+ * @method JtWhois seturl()         Sets the current record's "url" value
  * 
  * @package    jtweb
  * @subpackage model

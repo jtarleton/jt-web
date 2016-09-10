@@ -25,40 +25,40 @@ Doctrine_Manager::getInstance()->bindComponent('JtCountry', 'doctrine');
  * @property Doctrine_Collection $JtCity
  * @property Doctrine_Collection $JtCountryLanguage
  * 
- * @method string              get()                  Returns the current record's "code" value
- * @method string              get()                  Returns the current record's "name" value
- * @method enum                get()                  Returns the current record's "continent" value
- * @method string              get()                  Returns the current record's "region" value
- * @method float               get()                  Returns the current record's "surfacearea" value
- * @method integer             get()                  Returns the current record's "indepyear" value
- * @method integer             get()                  Returns the current record's "population" value
- * @method float               get()                  Returns the current record's "lifeexpectancy" value
- * @method float               get()                  Returns the current record's "gnp" value
- * @method float               get()                  Returns the current record's "gnpold" value
- * @method string              get()                  Returns the current record's "localname" value
- * @method string              get()                  Returns the current record's "governmentform" value
- * @method string              get()                  Returns the current record's "headofstate" value
- * @method integer             get()                  Returns the current record's "capital" value
- * @method string              get()                  Returns the current record's "code2" value
- * @method Doctrine_Collection get()                  Returns the current record's "JtCity" collection
- * @method Doctrine_Collection get()                  Returns the current record's "JtCountryLanguage" collection
- * @method JtCountry           set()                  Sets the current record's "code" value
- * @method JtCountry           set()                  Sets the current record's "name" value
- * @method JtCountry           set()                  Sets the current record's "continent" value
- * @method JtCountry           set()                  Sets the current record's "region" value
- * @method JtCountry           set()                  Sets the current record's "surfacearea" value
- * @method JtCountry           set()                  Sets the current record's "indepyear" value
- * @method JtCountry           set()                  Sets the current record's "population" value
- * @method JtCountry           set()                  Sets the current record's "lifeexpectancy" value
- * @method JtCountry           set()                  Sets the current record's "gnp" value
- * @method JtCountry           set()                  Sets the current record's "gnpold" value
- * @method JtCountry           set()                  Sets the current record's "localname" value
- * @method JtCountry           set()                  Sets the current record's "governmentform" value
- * @method JtCountry           set()                  Sets the current record's "headofstate" value
- * @method JtCountry           set()                  Sets the current record's "capital" value
- * @method JtCountry           set()                  Sets the current record's "code2" value
- * @method JtCountry           set()                  Sets the current record's "JtCity" collection
- * @method JtCountry           set()                  Sets the current record's "JtCountryLanguage" collection
+ * @method string              getcode()              Returns the current record's "code" value
+ * @method string              getname()              Returns the current record's "name" value
+ * @method enum                getcontinent()         Returns the current record's "continent" value
+ * @method string              getregion()            Returns the current record's "region" value
+ * @method float               getsurfacearea()       Returns the current record's "surfacearea" value
+ * @method integer             getindepyear()         Returns the current record's "indepyear" value
+ * @method integer             getpopulation()        Returns the current record's "population" value
+ * @method float               getlifeexpectancy()    Returns the current record's "lifeexpectancy" value
+ * @method float               getgnp()               Returns the current record's "gnp" value
+ * @method float               getgnpold()            Returns the current record's "gnpold" value
+ * @method string              getlocalname()         Returns the current record's "localname" value
+ * @method string              getgovernmentform()    Returns the current record's "governmentform" value
+ * @method string              getheadofstate()       Returns the current record's "headofstate" value
+ * @method integer             getcapital()           Returns the current record's "capital" value
+ * @method string              getcode2()             Returns the current record's "code2" value
+ * @method Doctrine_Collection getJtCity()            Returns the current record's "JtCity" collection
+ * @method Doctrine_Collection getJtCountryLanguage() Returns the current record's "JtCountryLanguage" collection
+ * @method JtCountry           setcode()              Sets the current record's "code" value
+ * @method JtCountry           setname()              Sets the current record's "name" value
+ * @method JtCountry           setcontinent()         Sets the current record's "continent" value
+ * @method JtCountry           setregion()            Sets the current record's "region" value
+ * @method JtCountry           setsurfacearea()       Sets the current record's "surfacearea" value
+ * @method JtCountry           setindepyear()         Sets the current record's "indepyear" value
+ * @method JtCountry           setpopulation()        Sets the current record's "population" value
+ * @method JtCountry           setlifeexpectancy()    Sets the current record's "lifeexpectancy" value
+ * @method JtCountry           setgnp()               Sets the current record's "gnp" value
+ * @method JtCountry           setgnpold()            Sets the current record's "gnpold" value
+ * @method JtCountry           setlocalname()         Sets the current record's "localname" value
+ * @method JtCountry           setgovernmentform()    Sets the current record's "governmentform" value
+ * @method JtCountry           setheadofstate()       Sets the current record's "headofstate" value
+ * @method JtCountry           setcapital()           Sets the current record's "capital" value
+ * @method JtCountry           setcode2()             Sets the current record's "code2" value
+ * @method JtCountry           setJtCity()            Sets the current record's "JtCity" collection
+ * @method JtCountry           setJtCountryLanguage() Sets the current record's "JtCountryLanguage" collection
  * 
  * @package    jtweb
  * @subpackage model

@@ -21,32 +21,32 @@ Doctrine_Manager::getInstance()->bindComponent('JtAnnualReport', 'doctrine');
  * @property float $cc_balance_diff
  * @property string $summary
  * 
- * @method integer        get()                   Returns the current record's "id" value
- * @method integer        get()                   Returns the current record's "year" value
- * @method float          get()                   Returns the current record's "gross_earnings" value
- * @method float          get()                   Returns the current record's "fixed_expenses" value
- * @method float          get()                   Returns the current record's "total_spend" value
- * @method float          get()                   Returns the current record's "fed_taxes" value
- * @method float          get()                   Returns the current record's "state_taxes" value
- * @method float          get()                   Returns the current record's "city_taxes" value
- * @method float          get()                   Returns the current record's "retirement_savings" value
- * @method float          get()                   Returns the current record's "cc_balance_start" value
- * @method float          get()                   Returns the current record's "cc_balance_end" value
- * @method float          get()                   Returns the current record's "cc_balance_diff" value
- * @method string         get()                   Returns the current record's "summary" value
- * @method JtAnnualReport set()                   Sets the current record's "id" value
- * @method JtAnnualReport set()                   Sets the current record's "year" value
- * @method JtAnnualReport set()                   Sets the current record's "gross_earnings" value
- * @method JtAnnualReport set()                   Sets the current record's "fixed_expenses" value
- * @method JtAnnualReport set()                   Sets the current record's "total_spend" value
- * @method JtAnnualReport set()                   Sets the current record's "fed_taxes" value
- * @method JtAnnualReport set()                   Sets the current record's "state_taxes" value
- * @method JtAnnualReport set()                   Sets the current record's "city_taxes" value
- * @method JtAnnualReport set()                   Sets the current record's "retirement_savings" value
- * @method JtAnnualReport set()                   Sets the current record's "cc_balance_start" value
- * @method JtAnnualReport set()                   Sets the current record's "cc_balance_end" value
- * @method JtAnnualReport set()                   Sets the current record's "cc_balance_diff" value
- * @method JtAnnualReport set()                   Sets the current record's "summary" value
+ * @method integer        getid()                 Returns the current record's "id" value
+ * @method integer        getyear()               Returns the current record's "year" value
+ * @method float          getgross_earnings()     Returns the current record's "gross_earnings" value
+ * @method float          getfixed_expenses()     Returns the current record's "fixed_expenses" value
+ * @method float          gettotal_spend()        Returns the current record's "total_spend" value
+ * @method float          getfed_taxes()          Returns the current record's "fed_taxes" value
+ * @method float          getstate_taxes()        Returns the current record's "state_taxes" value
+ * @method float          getcity_taxes()         Returns the current record's "city_taxes" value
+ * @method float          getretirement_savings() Returns the current record's "retirement_savings" value
+ * @method float          getcc_balance_start()   Returns the current record's "cc_balance_start" value
+ * @method float          getcc_balance_end()     Returns the current record's "cc_balance_end" value
+ * @method float          getcc_balance_diff()    Returns the current record's "cc_balance_diff" value
+ * @method string         getsummary()            Returns the current record's "summary" value
+ * @method JtAnnualReport setid()                 Sets the current record's "id" value
+ * @method JtAnnualReport setyear()               Sets the current record's "year" value
+ * @method JtAnnualReport setgross_earnings()     Sets the current record's "gross_earnings" value
+ * @method JtAnnualReport setfixed_expenses()     Sets the current record's "fixed_expenses" value
+ * @method JtAnnualReport settotal_spend()        Sets the current record's "total_spend" value
+ * @method JtAnnualReport setfed_taxes()          Sets the current record's "fed_taxes" value
+ * @method JtAnnualReport setstate_taxes()        Sets the current record's "state_taxes" value
+ * @method JtAnnualReport setcity_taxes()         Sets the current record's "city_taxes" value
+ * @method JtAnnualReport setretirement_savings() Sets the current record's "retirement_savings" value
+ * @method JtAnnualReport setcc_balance_start()   Sets the current record's "cc_balance_start" value
+ * @method JtAnnualReport setcc_balance_end()     Sets the current record's "cc_balance_end" value
+ * @method JtAnnualReport setcc_balance_diff()    Sets the current record's "cc_balance_diff" value
+ * @method JtAnnualReport setsummary()            Sets the current record's "summary" value
  * 
  * @package    jtweb
  * @subpackage model

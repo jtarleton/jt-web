@@ -1,3 +1,66 @@
+jt_term_relationships:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                JtTermRelationships
+    module:               jt_term_relationships
+    prefix_path:          /jt_term_relationships
+    column:               Array
+    with_wildcard_routes: true
+
+jt_sessions:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                JtSessions
+    module:               jt_sessions
+    prefix_path:          /jt_sessions
+    column:               id
+    with_wildcard_routes: true
+
+jt_users:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                JtUsers
+    module:               jt_users
+    prefix_path:          /jt_users
+    column:               id
+    with_wildcard_routes: true
+
+jt_term_taxonomy:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                JtTermTaxonomy
+    module:               jt_term_taxonomy
+    prefix_path:          /jt_term_taxonomy
+    column:               term_taxonomy_id
+    with_wildcard_routes: true
+
+jt_terms:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                JtTerms
+    module:               jt_terms
+    prefix_path:          /jt_terms
+    column:               term_id
+    with_wildcard_routes: true
+
+jt_posts:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                JtPosts
+    module:               jt_posts
+    prefix_path:          /jt_posts
+    column:               id
+    with_wildcard_routes: true
+
+jtposts:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                jtposts
+    module:               jtposts
+    prefix_path:          /jtposts
+    column:               id
+    with_wildcard_routes: true
+
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
