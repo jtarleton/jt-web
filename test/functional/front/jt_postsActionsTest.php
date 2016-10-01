@@ -6,8 +6,5 @@ $browser = new sfTestFunctional(new sfBrowser());
 
 $browser->
   get('/jt_posts/index')->
-
-  with('request')->begin()->
-    isParameter('module', 'jt_posts')->
-    isParameter('action', 'index')->
-  end();
+	with('request')->begin()
+	->end();

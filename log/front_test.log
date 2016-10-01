@@ -497,3 +497,24 @@ Oct 01 12:06:00 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/module
 Oct 01 12:06:00 symfony [info] {sfPHPView} Decorate content with "/var/jt-web/apps/front/templates/layout.php"
 Oct 01 12:06:00 symfony [info] {sfPHPView} Render "/var/jt-web/apps/front/templates/layout.php"
 Oct 01 12:06:00 symfony [info] {sfWebResponse} Send content (4786 o)
+Oct 01 12:13:15 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Oct 01 12:13:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /jt_posts/index with parameters array (  'module' => 'jt_posts',  'action' => 'index',)
+Oct 01 12:13:16 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Oct 01 12:13:16 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Oct 01 12:13:16 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Oct 01 12:13:16 symfony [info] {sfWebResponse} Send content (107 o)
+Oct 01 12:13:16 symfony [info] {sfWebResponse} Send content (107 o)
+Oct 01 12:14:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Oct 01 12:14:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /jt_posts/index with parameters array (  'module' => 'jt_posts',  'action' => 'index',)
+Oct 01 12:14:47 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Oct 01 12:14:47 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Oct 01 12:14:47 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Oct 01 12:14:47 symfony [info] {sfWebResponse} Send content (107 o)
+Oct 01 12:14:47 symfony [info] {sfWebResponse} Send content (107 o)
+Oct 01 12:15:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Oct 01 12:15:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /jt_posts/index with parameters array (  'module' => 'jt_posts',  'action' => 'index',)
+Oct 01 12:15:52 symfony [info] {sfFilterChain} Executing filter "sfFakeRenderingFilter"
+Oct 01 12:15:52 symfony [info] {sfFilterChain} Executing filter "genFilter"
+Oct 01 12:15:52 symfony [info] {sfFrontWebController} Redirect to "http://localhost/index.php/frontdoor"
+Oct 01 12:15:52 symfony [info] {sfWebResponse} Send content (107 o)
+Oct 01 12:15:52 symfony [info] {sfWebResponse} Send content (107 o)
