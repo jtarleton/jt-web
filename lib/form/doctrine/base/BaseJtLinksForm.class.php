@@ -15,7 +15,8 @@ abstract class BaseJtLinksForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id'     => new sfWidgetFormInputText(),
+      'id'     => new sfWidgetFormInputHidden(),
+      'lid'    => new sfWidgetFormInputText(),
       'text'   => new sfWidgetFormInputText(),
       'url'    => new sfWidgetFormInputText(),
       'cat'    => new sfWidgetFormInputText(),
@@ -23,7 +24,8 @@ abstract class BaseJtLinksForm extends BaseFormDoctrine
     ));
 
     $this->setValidators(array(
-      'id'     => new sfValidatorString(array('max_length' => 200)),
+      'id'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
+      'lid'    => new sfValidatorString(array('max_length' => 200)),
       'text'   => new sfValidatorString(array('max_length' => 200)),
       'url'    => new sfValidatorString(array('max_length' => 200)),
       'cat'    => new sfValidatorString(array('max_length' => 200)),

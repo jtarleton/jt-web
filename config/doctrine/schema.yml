@@ -470,6 +470,12 @@ JtLinks:
   tableName: JtLinks
   columns:
     id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    lid:
       type: string(200)
       fixed: false
       unsigned: false

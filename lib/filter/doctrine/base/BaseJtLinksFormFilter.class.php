@@ -13,7 +13,7 @@ abstract class BaseJtLinksFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'lid'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'text'   => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'url'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'cat'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
@@ -21,7 +21,7 @@ abstract class BaseJtLinksFormFilter extends BaseFormFilterDoctrine
     ));
 
     $this->setValidators(array(
-      'id'     => new sfValidatorPass(array('required' => false)),
+      'lid'    => new sfValidatorPass(array('required' => false)),
       'text'   => new sfValidatorPass(array('required' => false)),
       'url'    => new sfValidatorPass(array('required' => false)),
       'cat'    => new sfValidatorPass(array('required' => false)),
@@ -45,7 +45,8 @@ abstract class BaseJtLinksFormFilter extends BaseFormFilterDoctrine
   public function getFields()
   {
     return array(
-      'id'     => 'Text',
+      'id'     => 'Number',
+      'lid'    => 'Text',
       'text'   => 'Text',
       'url'    => 'Text',
       'cat'    => 'Text',
