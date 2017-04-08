@@ -56,11 +56,10 @@ $geodata = array(
 $obj = new JtGeodata;
 foreach($geodata as $k=>$v){
 $setter = strtolower($k);
-$setter = str_replace('_', ' ',$setter);
-$setter = 'set'.ucwords($setter);
+$setter = 'set'.$setter;
 $setter = str_replace(' ','',$setter);
 $obj->$setter($v);
-  }
+}
 
 $obj->save();
 

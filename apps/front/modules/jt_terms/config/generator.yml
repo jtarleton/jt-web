@@ -4,18 +4,21 @@ generator:
     model_class:           JtTerms
     theme:                 admin
     non_verbose_templates: true
-    with_show:             false
-    singular:              ~
-    plural:                ~
+    with_show:             true
+    singular:              terms
+    plural:                jt_terms_list
     route_prefix:          jt_terms
     with_doctrine_route:   true
     actions_base_class:    sfActions
-
-    config:
+    config:  
       actions: ~
-      fields:  ~
-      list:    ~
-      filter:  ~
-      form:    ~
-      edit:    ~
-      new:     ~
+      fields:
+        post_title:    {  }
+        post_date : { }
+        post_content : { }
+      list:
+        display:  [term_id, name, slug, term_group] 
+      edit: ~
+      filter: ~
+      form: ~ 
+      new: ~ 

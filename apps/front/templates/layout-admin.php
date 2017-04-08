@@ -8,23 +8,13 @@
     <?php include_metas() ?>
     <?php include_title() ?>
 
-    <link rel="shortcut icon" href="/images/favicon.ico" />
-
-<style type="text/css">
-#jt_posts_post_content {
-          height: 598px;
-    width: 996px; 
-    }
-    </style>
+    <link rel="shortcut icon" href="https://www.jamestarleton.com/images/favicon.ico" />
 
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
+  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   
-
-
-
-
 
 
     <meta charset="utf-8">
@@ -35,17 +25,21 @@
 
 
     <!-- Bootstrap Core CSS -->
-    <link href="http://www.runforever.co/css/admin/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://www.jamestarleton.com/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Custom CSS -->
-    <link href="http://www.runforever.co/css/admin/sb-admin.css" rel="stylesheet">
+    <link href="https://www.jamestarleton.com/css/sbadmin.css" rel="stylesheet">
+
+
 
     <!-- Morris Charts CSS 
     <link href="css/plugins/morris.css" rel="stylesheet"> -->
 
-    <!-- Custom Fonts -->
+    <!-- Custom Fonts
     <link href="http://www.runforever.co/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -59,7 +53,7 @@
 
     <div id="wrapper">
 
-<?php //include_partial('admin/nav'); ?>
+<?php include('_nav.php'); ?>
         <div id="page-wrapper">
 
             <div class="container-fluid">
@@ -221,7 +215,8 @@ rror"><?php echo $sf_user->getFlash('error') ?></div>
     <!-- jQuery -->
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="http://www.runforever.co/js/admin/bootstrap.min.js"></script>
+ <script src="https://www.jamestarleton.com/assets/js/bootstrap.min.js"></script>
+
 
     <!-- Morris Charts JavaScript
     <script src="js/plugins/morris/raphael.min.js"></script>
@@ -239,11 +234,10 @@ rror"><?php echo $sf_user->getFlash('error') ?></div>
 
 
     <!-- Scripts 
-      <script src="http://www.runforever.co/assets/js/jquery.min.js"></script>
--->      <script src="http://www.runforever.co/assets/js/skel.min.js"></script>
-      <script src="http://www.runforever.co/assets/js/util.js"></script>
+    -->   <script src="https://www.jamestarleton.com/assets/js/skel.min.js"></script>
+      <script src="https://www.jamestarleton.com/assets/js/util.js"></script>
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script src="http://www.runforever.co/assets/js/main.js"></script>
+      <script src="https://www.jamestarleton.com/assets/js/main.js"></script>
 
   </body>
 </html>

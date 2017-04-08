@@ -13,4 +13,7 @@ require_once dirname(__FILE__).'/../lib/jt_postsGeneratorHelper.class.php';
  */
 class jt_postsActions extends autoJt_postsActions
 {
+  public function executeHome () {
+// 	$this->setLayout('skinless'); 
+  }
 }

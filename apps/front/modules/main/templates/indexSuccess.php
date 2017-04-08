@@ -13,7 +13,7 @@ $helper = new \Facebook\FacebookRedirectLoginHelper('http://www.jamestarleton.co
 $scopes=array('scope'=>'public_profile');
 $loginUrl = $helper->getLoginUrl($scopes); ?>
 
-<?php if($_SESSION['fbsess']): ?>
+<?php if(@$_SESSION['fbsess']): ?>
 
 
 <b>March 8, 2015</b>
@@ -95,8 +95,10 @@ Added this <?php echo link_to('script','http://www.jamestarleton.com/wikipedia')
 
 <br />
 <?php endif; ?>
-<b>November 11, 2014</b>
-                <p>Cool content coming soon...</p>
-
-
+<?php foreach($postObjs as $postObj): ?>
+<b><?php echo $postObj->getPost_Title(); ?></b>
+<i><?php echo $postObj->getPost_Date(); ?></i>
+                <p><?php echo substr($postObj->getPost_Content(),0,200); ?></p>
+<?php echo link_to('More', '@postdetail?id='. $postObj->getId()); ?>
+<?php endforeach; ?>
 

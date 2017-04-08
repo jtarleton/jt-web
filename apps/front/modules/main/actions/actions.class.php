@@ -19,7 +19,13 @@ $this->setLayout('skinless');
 public function executeLinks(sfWebRequest $request) {
 
 }
+public function executeMarathons(sfWebRequest $request){
 
+ $this->marathons =   JtMarathonResultsTable::getAll();
+
+
+
+}
 public function executeLinksbycat($request) {
 
 $this->linksByCat = JtLinksTable::getAllByCat($request->getParameter('cat'));
@@ -30,6 +36,11 @@ public function executePics(sfWebRequest $request) {
 $this->pics = array(
 
 );
+}
+public function executePostdetail(sfWebRequest $request) {
+
+$this->postObj = Doctrine::getTable('JtPosts')->find( $request->getParameter('id') );
+
 }
 public function executeRunning(sfWebRequest $request) {
 
@@ -201,8 +212,8 @@ exit(0);
 	 $this->Ar = new I18N_Arabic('Transliteration');
 
 
-	$this->termObjs =   Doctrine_Core::getTable('JtTerms')->findAll();
-
+//	$this->termObjs =   Doctrine_Core::getTable('JtTerms')->findAll();
+	$this->postObjs = JtPostsTable::getAllPublish();
 
   }
   public function execute2colsleft(sfWebRequest $request){

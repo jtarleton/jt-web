@@ -136,6 +136,7 @@ if(!in_array( @$_SERVER['GEOIP_ADDR'], $ips) ){
 		$passOK = false;
 		try
 		{
+			$u = null;
 			if(!empty($values['username'])){
 				$u =Doctrine_Core::getTable('JtUsers')->findOneBy('username', $values['username']); 
 			}

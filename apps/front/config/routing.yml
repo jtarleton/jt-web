@@ -69,7 +69,22 @@ jtposts:
 #  url:   /
 #  param: { module: default, action: index }
 
+jtadmin:
+  url: /admin
+  param: { module: jt_posts, action: home }
 
+jtposts:
+  url: /admin/posts
+  param: { module: jt_posts, action: index }
+jtpostsnew:
+  url: /admin/posts/create
+  param: { module: jt_posts, action: new }
+jtterms:
+  url: /admin/tags
+  param: { module: jt_terms, action: index }
+jttermsnew: 
+  url: /admin/tags/create
+  param: { module: jt_terms, action: new }
 homepage:
   url: /
   param: { module: main, action:index }
@@ -146,7 +161,9 @@ tutorial2parse:
 about:
   url: /about
   param: { module: main, action:about }
-
+postdetail:
+  url: /postdetail/:id
+  param: { module: main, action:postdetail } 
 races:
   url: /races
   param: { module: main, action:races }

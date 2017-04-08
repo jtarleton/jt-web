@@ -18,3 +18,20 @@ default:
 
   has_layout:     true
   layout:         layout
+
+jt_posts:
+  has_layout: true
+  layout:     layout-admin
+
+jt_users:
+  has_layout: true
+  layout:     layout-admin
+
+jt_terms:
+  has_layout: true
+  layout:     layout-admin
+
+jt_term_taxonomy:
+  has_layout: true
+  layout:     layout-admin
+

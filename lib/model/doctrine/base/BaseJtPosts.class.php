@@ -10,73 +10,25 @@ Doctrine_Manager::getInstance()->bindComponent('JtPosts', 'doctrine');
  * @property integer $id
  * @property integer $post_author
  * @property timestamp $post_date
- * @property timestamp $post_date_gmt
  * @property string $post_content
  * @property string $post_title
- * @property string $post_excerpt
  * @property string $post_status
- * @property string $comment_status
- * @property string $ping_status
- * @property string $post_password
- * @property string $post_name
- * @property string $to_ping
- * @property string $pinged
  * @property timestamp $post_modified
- * @property timestamp $post_modified_gmt
- * @property string $post_content_filtered
- * @property integer $post_parent
- * @property string $guid
- * @property integer $menu_order
- * @property string $post_type
- * @property string $post_mime_type
- * @property integer $comment_count
  * 
- * @method integer   getid()                    Returns the current record's "id" value
- * @method integer   getpost_author()           Returns the current record's "post_author" value
- * @method timestamp getpost_date()             Returns the current record's "post_date" value
- * @method timestamp getpost_date_gmt()         Returns the current record's "post_date_gmt" value
- * @method string    getpost_content()          Returns the current record's "post_content" value
- * @method string    getpost_title()            Returns the current record's "post_title" value
- * @method string    getpost_excerpt()          Returns the current record's "post_excerpt" value
- * @method string    getpost_status()           Returns the current record's "post_status" value
- * @method string    getcomment_status()        Returns the current record's "comment_status" value
- * @method string    getping_status()           Returns the current record's "ping_status" value
- * @method string    getpost_password()         Returns the current record's "post_password" value
- * @method string    getpost_name()             Returns the current record's "post_name" value
- * @method string    getto_ping()               Returns the current record's "to_ping" value
- * @method string    getpinged()                Returns the current record's "pinged" value
- * @method timestamp getpost_modified()         Returns the current record's "post_modified" value
- * @method timestamp getpost_modified_gmt()     Returns the current record's "post_modified_gmt" value
- * @method string    getpost_content_filtered() Returns the current record's "post_content_filtered" value
- * @method integer   getpost_parent()           Returns the current record's "post_parent" value
- * @method string    getguid()                  Returns the current record's "guid" value
- * @method integer   getmenu_order()            Returns the current record's "menu_order" value
- * @method string    getpost_type()             Returns the current record's "post_type" value
- * @method string    getpost_mime_type()        Returns the current record's "post_mime_type" value
- * @method integer   getcomment_count()         Returns the current record's "comment_count" value
- * @method JtPosts   setid()                    Sets the current record's "id" value
- * @method JtPosts   setpost_author()           Sets the current record's "post_author" value
- * @method JtPosts   setpost_date()             Sets the current record's "post_date" value
- * @method JtPosts   setpost_date_gmt()         Sets the current record's "post_date_gmt" value
- * @method JtPosts   setpost_content()          Sets the current record's "post_content" value
- * @method JtPosts   setpost_title()            Sets the current record's "post_title" value
- * @method JtPosts   setpost_excerpt()          Sets the current record's "post_excerpt" value
- * @method JtPosts   setpost_status()           Sets the current record's "post_status" value
- * @method JtPosts   setcomment_status()        Sets the current record's "comment_status" value
- * @method JtPosts   setping_status()           Sets the current record's "ping_status" value
- * @method JtPosts   setpost_password()         Sets the current record's "post_password" value
- * @method JtPosts   setpost_name()             Sets the current record's "post_name" value
- * @method JtPosts   setto_ping()               Sets the current record's "to_ping" value
- * @method JtPosts   setpinged()                Sets the current record's "pinged" value
- * @method JtPosts   setpost_modified()         Sets the current record's "post_modified" value
- * @method JtPosts   setpost_modified_gmt()     Sets the current record's "post_modified_gmt" value
- * @method JtPosts   setpost_content_filtered() Sets the current record's "post_content_filtered" value
- * @method JtPosts   setpost_parent()           Sets the current record's "post_parent" value
- * @method JtPosts   setguid()                  Sets the current record's "guid" value
- * @method JtPosts   setmenu_order()            Sets the current record's "menu_order" value
- * @method JtPosts   setpost_type()             Sets the current record's "post_type" value
- * @method JtPosts   setpost_mime_type()        Sets the current record's "post_mime_type" value
- * @method JtPosts   setcomment_count()         Sets the current record's "comment_count" value
+ * @method integer   getid()            Returns the current record's "id" value
+ * @method integer   getpost_author()   Returns the current record's "post_author" value
+ * @method timestamp getpost_date()     Returns the current record's "post_date" value
+ * @method string    getpost_content()  Returns the current record's "post_content" value
+ * @method string    getpost_title()    Returns the current record's "post_title" value
+ * @method string    getpost_status()   Returns the current record's "post_status" value
+ * @method timestamp getpost_modified() Returns the current record's "post_modified" value
+ * @method JtPosts   setid()            Sets the current record's "id" value
+ * @method JtPosts   setpost_author()   Sets the current record's "post_author" value
+ * @method JtPosts   setpost_date()     Sets the current record's "post_date" value
+ * @method JtPosts   setpost_content()  Sets the current record's "post_content" value
+ * @method JtPosts   setpost_title()    Sets the current record's "post_title" value
+ * @method JtPosts   setpost_status()   Sets the current record's "post_status" value
+ * @method JtPosts   setpost_modified() Sets the current record's "post_modified" value
  * 
  * @package    jtweb
  * @subpackage model
@@ -116,16 +68,6 @@ abstract class BaseJtPosts extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 25,
              ));
-        $this->hasColumn('post_date_gmt', 'timestamp', 25, array(
-             'type' => 'timestamp',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => '0000-00-00 00:00:00',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 25,
-             ));
         $this->hasColumn('post_content', 'string', null, array(
              'type' => 'string',
              'fixed' => 0,
@@ -144,15 +86,6 @@ abstract class BaseJtPosts extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => '',
              ));
-        $this->hasColumn('post_excerpt', 'string', null, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => '',
-             ));
         $this->hasColumn('post_status', 'string', 20, array(
              'type' => 'string',
              'fixed' => 0,
@@ -163,64 +96,6 @@ abstract class BaseJtPosts extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 20,
              ));
-        $this->hasColumn('comment_status', 'string', 20, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => 'open',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 20,
-             ));
-        $this->hasColumn('ping_status', 'string', 20, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => 'open',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 20,
-             ));
-        $this->hasColumn('post_password', 'string', 20, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => '',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 20,
-             ));
-        $this->hasColumn('post_name', 'string', 200, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => '',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 200,
-             ));
-        $this->hasColumn('to_ping', 'string', null, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => '',
-             ));
-        $this->hasColumn('pinged', 'string', null, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => '',
-             ));
         $this->hasColumn('post_modified', 'timestamp', 25, array(
              'type' => 'timestamp',
              'fixed' => 0,
@@ -230,85 +105,6 @@ abstract class BaseJtPosts extends sfDoctrineRecord
              'notnull' => true,
              'autoincrement' => false,
              'length' => 25,
-             ));
-        $this->hasColumn('post_modified_gmt', 'timestamp', 25, array(
-             'type' => 'timestamp',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => '0000-00-00 00:00:00',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 25,
-             ));
-        $this->hasColumn('post_content_filtered', 'string', null, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => '',
-             ));
-        $this->hasColumn('post_parent', 'integer', 8, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => true,
-             'primary' => false,
-             'default' => '0',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 8,
-             ));
-        $this->hasColumn('guid', 'string', 255, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => '',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 255,
-             ));
-        $this->hasColumn('menu_order', 'integer', 4, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => '0',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 4,
-             ));
-        $this->hasColumn('post_type', 'string', 20, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => 'post',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 20,
-             ));
-        $this->hasColumn('post_mime_type', 'string', 100, array(
-             'type' => 'string',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => '',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 100,
-             ));
-        $this->hasColumn('comment_count', 'integer', 8, array(
-             'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => false,
-             'primary' => false,
-             'default' => '0',
-             'notnull' => true,
-             'autoincrement' => false,
-             'length' => 8,
              ));
     }
 

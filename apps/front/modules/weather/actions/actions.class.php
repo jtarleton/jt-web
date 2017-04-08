@@ -62,15 +62,16 @@ if( ! $curl_resp = curl_exec($ch))
         trigger_error(curl_error($ch));
     } 
 curl_close($ch);
-
+/* 
 $xml = simplexml_load_string(trim($curl_resp));
 
 //$blocks  = $xml->xpath('//block'); //gets all <block/> tags
 $b = $xml->xpath('//parameters/temperature'); //gets all <block/> which parent are   <layout/>  tags
 
 
-
+*/
 $type=0;
+$b = array();
 foreach($b as $obj){
 
     /* 
@@ -94,23 +95,27 @@ foreach($b as $obj){
     */
             $out = array();
  
-        foreach($obj->value as $v){
-            $temps[$obj->name->__toString()][] = $v->__toString(); //->value;
-        }
+//        foreach($obj->value as $v){
+  //          $temps[$obj->name->__toString()][] = $v->__toString(); //->value;
+    //    }
       
 
 }
 $ind = 0;
+$temps = array();
 $results = array();
-foreach($temps['Daily Minimum Temperature'] as $temp){
+if(count(@$temps['Daily Minimum Temperature'])){
+foreach(@$temps['Daily Minimum Temperature'] as $temp){
 
-    $results['low_temp'][  $r[$ind] ] = $temp; 
+ //   @$results['low_temp'][  @$r[$ind] ] = $temp; 
     $ind++;
+} 
 }
+$r = array();
 $ind = 0;
-for($ind = 0; $ind < count($results['low_temp']);$ind++){
+for($ind = 0; $ind < count(@$results['low_temp']);$ind++){
 
-    $results['high_temp'][  $r[$ind] ] = $temps['Daily Maximum Temperature'][$ind]; 
+ //   @$results['high_temp'][  @$r[$ind] ] = $temps['Daily Maximum Temperature'][$ind]; 
     
 }
 $this->final = array();

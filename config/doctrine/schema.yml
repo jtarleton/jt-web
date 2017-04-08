@@ -504,6 +504,87 @@ JtLinks:
       primary: false
       notnull: true
       autoincrement: false
+JtMarathonResults:
+  connection: doctrine
+  tableName: JtMarathonResults
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    year:
+      type: string(11)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    city:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    event_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    overall_place:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    age_group_place:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    gender_place:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    half_split:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    net_finish_time:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    avg_pace:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    notes:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
 JtPosts:
   connection: doctrine
   tableName: JtPosts
@@ -530,14 +611,6 @@ JtPosts:
       default: '0000-00-00 00:00:00'
       notnull: true
       autoincrement: false
-    post_date_gmt:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: '0000-00-00 00:00:00'
-      notnull: true
-      autoincrement: false
     post_content:
       type: string()
       fixed: false
@@ -552,13 +625,6 @@ JtPosts:
       primary: false
       notnull: true
       autoincrement: false
-    post_excerpt:
-      type: string()
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
     post_status:
       type: string(20)
       fixed: false
@@ -567,121 +633,12 @@ JtPosts:
       default: publish
       notnull: true
       autoincrement: false
-    comment_status:
-      type: string(20)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: open
-      notnull: true
-      autoincrement: false
-    ping_status:
-      type: string(20)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: open
-      notnull: true
-      autoincrement: false
-    post_password:
-      type: string(20)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: ''
-      notnull: true
-      autoincrement: false
-    post_name:
-      type: string(200)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: ''
-      notnull: true
-      autoincrement: false
-    to_ping:
-      type: string()
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    pinged:
-      type: string()
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
     post_modified:
       type: timestamp(25)
       fixed: false
       unsigned: false
       primary: false
       default: '0000-00-00 00:00:00'
-      notnull: true
-      autoincrement: false
-    post_modified_gmt:
-      type: timestamp(25)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: '0000-00-00 00:00:00'
-      notnull: true
-      autoincrement: false
-    post_content_filtered:
-      type: string()
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
-    post_parent:
-      type: integer(8)
-      fixed: false
-      unsigned: true
-      primary: false
-      default: '0'
-      notnull: true
-      autoincrement: false
-    guid:
-      type: string(255)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: ''
-      notnull: true
-      autoincrement: false
-    menu_order:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: '0'
-      notnull: true
-      autoincrement: false
-    post_type:
-      type: string(20)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: post
-      notnull: true
-      autoincrement: false
-    post_mime_type:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: ''
-      notnull: true
-      autoincrement: false
-    comment_count:
-      type: integer(8)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: '0'
       notnull: true
       autoincrement: false
 JtQuotes:

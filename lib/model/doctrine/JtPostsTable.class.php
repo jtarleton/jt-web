@@ -16,4 +16,15 @@ class JtPostsTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('JtPosts');
     }
+
+	public static function getAllPublish() {
+
+		$vals=Doctrine_Core::getTable('JtPosts')->findBy('post_status','publish');
+		return $vals;
+	}
+
+
+
+
+
 }
