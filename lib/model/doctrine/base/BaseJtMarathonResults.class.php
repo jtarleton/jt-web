@@ -56,9 +56,8 @@ abstract class BaseJtMarathonResults extends sfDoctrineRecord
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
-             'primary' => false,
-             'notnull' => true,
-             'autoincrement' => false,
+             'primary' => true,
+             'autoincrement' => true,
              'length' => 4,
              ));
         $this->hasColumn('year', 'string', 11, array(

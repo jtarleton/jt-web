@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="https://www.jamestarleton.com/index">JT-WWW Admin</a>
+                <a class="navbar-brand" href="https://www.jamestarleton.com/">Homepage</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav"><!-- 
@@ -138,7 +138,7 @@
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li> -->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Blog <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Blog Posts <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="https://www.jamestarleton.com/jt_posts">All Posts</a>
@@ -148,6 +148,44 @@
                             </li>
                         </ul>
                     </li>
+
+
+
+     <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#demo12"><i class="fa fa-fw fa-arrows-v"></i> Links <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo12" class="collapse">
+                            <li>
+                                <a href="https://www.jamestarleton.com/jt_links">All Links</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jamestarleton.com/jt_links/new">Create New Link</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+        <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#demo6"><i class="fa fa-fw fa-arrows-v"></i> Marathons <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo6" class="collapse">
+                            <li>
+                                <a href="https://www.jamestarleton.com/jt_marathon_results">All Marathons</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jamestarleton.com/jt_marathon_results/new">Create New Marathon</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+
+
+
+
+
 
 
 

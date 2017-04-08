@@ -1,3 +1,21 @@
+jt_links:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                JtLinks
+    module:               jt_links
+    prefix_path:          /jt_links
+    column:               id
+    with_wildcard_routes: true
+
+jt_marathon_results:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                JtMarathonResults
+    module:               jt_marathon_results
+    prefix_path:          /jt_marathon_results
+    column:               id
+    with_wildcard_routes: true
+
 jt_term_relationships:
   class: sfDoctrineRouteCollection
   options:
@@ -167,6 +185,9 @@ postdetail:
 races:
   url: /races
   param: { module: main, action:races }
+marathons:
+  url: /marathons
+  param: { module: main, action: marathons }
 
 #contact:
  # url: /contact

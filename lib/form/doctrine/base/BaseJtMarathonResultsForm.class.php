@@ -15,7 +15,7 @@ abstract class BaseJtMarathonResultsForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id'              => new sfWidgetFormInputText(),
+      'id'              => new sfWidgetFormInputHidden(),
       'year'            => new sfWidgetFormInputText(),
       'city'            => new sfWidgetFormInputText(),
       'event_name'      => new sfWidgetFormInputText(),
@@ -29,7 +29,7 @@ abstract class BaseJtMarathonResultsForm extends BaseFormDoctrine
     ));
 
     $this->setValidators(array(
-      'id'              => new sfValidatorInteger(),
+      'id'              => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'year'            => new sfValidatorString(array('max_length' => 11, 'required' => false)),
       'city'            => new sfValidatorString(array('max_length' => 200)),
       'event_name'      => new sfValidatorString(array('max_length' => 200)),

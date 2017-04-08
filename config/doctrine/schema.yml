@@ -512,9 +512,8 @@ JtMarathonResults:
       type: integer(4)
       fixed: false
       unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
+      primary: true
+      autoincrement: true
     year:
       type: string(11)
       fixed: false
