@@ -16,6 +16,8 @@ class ProjectConfiguration extends sfProjectConfiguration
    $loader = new UniversalClassLoader();
    $loader->registerNamespaces(array(
         'Facebook' => '/var/jt-web/lib',
+	'dawguk'=>'/var/jt-web/lib/Strava',
+	'Strava'=>'/var/jt-web/lib/Strava'
     ));
    $loader->register();
  }

@@ -1,5 +1,8 @@
 <?php
 
+require('/var/jt-web/lib/Strava/Strava.php');
+
+
 /**
  * main actions.
  *
@@ -10,11 +13,50 @@
  */
 //namespace Httpful;
 use \Httpful\Request;
+
+//namespace dawguk;
+
+use \Iamstuartwilson\StravaApi;
+
 //use \Facebook;
 class mainActions extends sfActions
 {
 public function executeArunnersplace(){ 
 $this->setLayout('skinless');
+}
+public function executeStrava(sfWebRequest $request){
+
+$strCode = $_SESSION['strava_code'];
+if(isset($strCode)){	
+$arrConfig = array(
+   'CLIENT_ID' => 17271,
+   'CLIENT_SECRET' => 'df76e682b2b4965342db39dac56ea223788bd0e2',
+   'REDIRECT_URI' => 'https://www.jamestarleton.com',
+   //'CACHE_DIRECTORY' => '/path/to/cache/dir/'
+);
+
+
+$obj = new \Iamstuartwilson\StravaApi($arrConfig['CLIENT_ID'], 
+$arrConfig['CLIENT_SECRET']);
+$this->setLayout('skinless');
+ $this->StravaResp = $obj->tokenExchange($strCode);
+ $_SESSION['STRAVA_TOK'] =$this->StravaResp->access_token;
+ $obj->setAccessToken($_SESSION['STRAVA_TOK']);
+
+	$this->runs =($obj->get('https://www.strava.com/api/v3/athlete/activities'));
+
+
+}
+
+/* $id = 3039863;
+
+$endpointUrl = sprintf('https://www.strava.com/api/v3/athletes/%s', $id );
+$this->objStrava = $obj->get($endpointUrl, array());
+*/
+
+}
+public function executeStravaoauth(sfWebRequest $request) {
+
 }
 public function executeLinks(sfWebRequest $request) {
 
@@ -180,7 +222,7 @@ $this->getUser()->setAuthenticated(true);
 }
 
 public function executeArabic(){
-//namespace Httpful;
+///namespace Httpful;
 //use \Httpful\Request;
 die(var_dump(
 class_exists('\Request')));
@@ -206,6 +248,23 @@ exit(0);
   */
   public function executeIndex(sfWebRequest $request)
  {
+	$_SESSION['strava_code'] = null;
+
+/*
+	$this->arrConfig = array(
+   	'CLIENT_ID' => 17271,
+   	'CLIENT_SECRET' => 'df76e682b2b4965342db39dac56ea223788bd0e2 ',
+   	'REDIRECT_URI' => 'https://www.jamestarleton.com',
+   //'CACHE_DIRECTORY' => '/path/to/cache/dir/'
+	);
+
+
+	$objStrava = new \dawguk\Strava($this->arrConfig);
+
+*/
+
+
+
 
    	$this->data = array('foo'); // $this->forward('default', 'module');
 	//$this->setLayout('layout-ar');
@@ -214,6 +273,56 @@ exit(0);
 
 //	$this->termObjs =   Doctrine_Core::getTable('JtTerms')->findAll();
 	$this->postObjs = JtPostsTable::getAllPublish();
+
+
+
+
+	if( $request->getParameter('error')!=='access_denied' 
+		&& $request->hasParameter('code')
+	) {
+
+
+	
+	$strCode = $request->getParameter('code');
+	$_SESSION['strava_code'] = $strCode;
+	//Exchange code for access Token
+
+
+//	$this->StravaResp = $objStrava->performTokenExchange($strCode);
+	
+/* 
+
+	$ curl -X POST https://www.strava.com/oauth/token \
+    -F client_id=5 \
+    -F client_secret=7b2946535949ae70f015d696d8ac602830ece412 \
+    -F code=75e251e3ff8fff
+
+Example response
+
+{
+  "access_token": "83ebeabdec09f6670863766f792ead24d61fe3f9",
+  "athlete": {
+    "id": 227615,
+*/
+
+
+
+
+
+
+		//$this->redirect( 'https://www.jamestarleton.com/stravaoauth');
+	}
+
+
+
+
+
+
+
+
+
+
+
 
   }
   public function execute2colsleft(sfWebRequest $request){

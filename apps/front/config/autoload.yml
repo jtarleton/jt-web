@@ -5,6 +5,9 @@ autoload:
   fb:
     path: /var/jt-web/lib/Facebook/
     recursive: on
+  strava:
+    path: /var/jt-web/lib/Strava/
+    recursive: on
 #  csv:
 #    path: /var/jt-web/lib/php-csv-utils-0.3/Csv/
 #    recursive: on

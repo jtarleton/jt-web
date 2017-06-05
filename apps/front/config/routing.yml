@@ -197,6 +197,14 @@ scooby:
   url: /scooby
   param: { module: main, action:scooby }
 
+strava: 
+  url:  /strava
+  param: { module: main, action:strava }
+
+stravaoauth: 
+  url:  /stravaoauth
+  param: { module: main, action:stravaoauth }
+
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
